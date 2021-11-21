@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title> Options and System Inquiries</title>
+  <link rel="stylesheet" href="StyleSheets/man.css" type="text/css" title="man" />
+  <meta name="description" value=" Options and System Inquiries" />
+  <meta name="keywords" value="user_guide" />
+  <meta name="resource-type" value="document" />
+  <meta name="distribution" value="global" />
+</head>
+<body>
+<hr />
+
+  <a name="tex2html167" href="node10.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+  <a name="tex2html165" href= "node5.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+  <a name="tex2html161" href="node8.html"> <img align="bottom" alt="previous" src= "icons/previous_motif.gif" /> </a>
+  <a name="tex2html169" href="node1.html"> <img align="bottom" alt="contents" src="icons/contents_motif.gif" /> </a>
+<br />
+
+  <b> Next:</b> <a name="tex2html168" href="node10.html"> Examples</a>
+  <b> Up:</b> <a name="tex2html166" href="node5.html"> Using M_StopWatch</a>
+  <b> Previous:</b> <a name="tex2html162" href="node8.html"> Operations on Watch</a>
+<br />
+
+<hr />
+
+<h1> <a name="SECTION00540000000000000000"> Options and System Inquiries</a> </h1> 
+
+<p>
+   <a name="opt"> </a>
+</p>
+
+<p>
+   Subroutines are provided to set several options within M_StopWatch , to
+   determine the current value of these options, and to determine system
+   dependent values of the implementation.
+</p>
+
+  <ul> 
+    <li> <b> option_stopwatch</b> -- sets options within M_StopWatch .</li> 
+    <li> <b> inquiry_stopwatch</b> -- returns values of options and system dependent values</li> 
+  </ul>
+
+<p>
+   All arguments to these subroutines are optional. All arguments to
+   <b> option_stopwatch</b> are intent IN, and all arguments to <b>
+   inquiry_stopwatch</b> are intent OUT. The options that can be set by <b>
+   option_stopwatch</b> and read by <b> inquiry_stopwatch</b> are:
+</p>
+
+
+  <ul> 
+    <li> <i> default_clock</i> -- character(len=*)
+   	 or character(len=*)(:) (must be an array in <b>
+   	 inquiry_stopwatch</b>). Specifies one or more clock
+   	 types to be used as the default clocks when the clock
+   	 argument is omitted. Initial default (/'cpu ','user','sys',
+   	 'wall'/). Unavailable clocks will be automatically dropped
+   	 from the list.
+    </li>
+    <li> <i> io_unit_print</i> -- integer. Specifies an I/O unit for
+         printed output from routine <b> print_watch</b> . Initial default is
+         6. The specified unit must be open for writing sequential formatted
+         output.
+    </li>
+    <li>
+         <i> io_unit_error</i> -- integer. Specifies an I/O unit for printed
+         error messages. Initial default is 6. The specified unit must be open
+         for writing sequential formatted output.
+    </li>
+    <li>
+         <i> print_errors</i> -- logical. Flag to specify whether or not
+         error messages should be printed. Initial default is .true.
+    </li>
+    <li>
+         <i> abort_errors</i> -- logical. Flag to specify whether or not the program
+         should abort on an error. If the program does not abort, then the
+         requested operation is ignored and execution continues. Initial default
+         is .false.
+    </li>
+    <li>
+         <i> print_form</i> -- character(len=*). Specifies the form for
+         printing time in <b> print_watch</b> . The valid values are:
+         <ul>
+            <li> 'sec'. Print seconds as a real number with two digits after the decimal point. This is the default.</li> 
+            <li> 'hh:mm:ss'. Print time as hours, minutes and seconds separated by colons.</li> 
+            <li> '[[hh:]mm:]ss'. The same as 'hh:mm:ss' except hours and minutes are printed only if they are nonzero.</li>
+        </ul> 
+    </li>
+</ul>
+
+<p>
+   In addition, <b> inquiry_stopwatch</b> takes the following optional
+   arguments:
+</p>
+
+  <ul>
+    <li> <i> cpu_avail</i>  -- logical. True if the cpu clock is available in the implementation.</li> 
+    <li> <i> user_avail</i> -- logical. True if the user clock is available in the implementation.</li> 
+    <li> <i> sys_avail</i>  -- logical. True if the sys clock is available in the implementation.</li> 
+    <li> <i> wall_avail</i> -- logical. True if the wall clock is available in the implementation.</li> 
+    <li> <i> cpu_prec</i>   -- real. The cpu clock precision in seconds,
+                               i.e., the smallest amount of time that the cpu, user and sys clocks
+                               can measure.</li>
+    <li> <i> wall_prec</i>  -- real. The wall clock precision in seconds.</li> 
+    <li> <i> version</i>    -- character(len=16). The version number of M_StopWatch .</li> 
+  </ul>
+<br />
+
+<hr />
+
+  <a name="tex2html167" href="node10.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+  <a name="tex2html165" href= "node5.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+  <a name="tex2html161" href="node8.html"> <img align="bottom" alt="previous" src= "icons/previous_motif.gif" /> </a>
+  <a name="tex2html169" href="node1.html"> <img align="bottom" alt="contents" src="icons/contents_motif.gif" /> </a>
+<br />
+
+  <b> Next:</b> <a name="tex2html168" href="node10.html"> Examples</a>
+  <b> Up:</b> <a name="tex2html166" href="node5.html"> Using M_StopWatch</a>
+  <b> Previous:</b> <a name="tex2html162" href="node8.html"> Operations on Watch</a>
+<br />
+
+<hr />
+  <address> william.mitchell@nist.gov </address>
+</body>
+</html>

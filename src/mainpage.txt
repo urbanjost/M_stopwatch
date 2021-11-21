@@ -1,0 +1,25 @@
+'mainpage.txt
+/**
+         @mainpage M_stopwatch Fortran Library
+
+         @section Introduction
+
+         M_stopwatch - package for measuring cpu and wall clock execution time (LICENSE:PD)
+
+         M_StopWatch is a Fortran 90 module for measuring execution time
+         of program segments.  M_StopWatch is designed to be a portable,
+         easy-to- use means of measuring execution time.  It supports
+         the wall clock, CPU clock, and a breakdown of the CPU clock
+         into user and system times. It returns all times in seconds.
+         It provides a simple means of determining which clocks are
+         available, and the precision of those clocks.
+
+         M_StopWatch is used by instrumenting your code with subroutine
+         calls that mimic the operation of a stop watch.  The primary
+         routines are start_watch, stop_watch, reset_watch, read_watch,
+         and print_watch.  M_StopWatch supports multiple watches, and
+         provides the concept of watch groups to allow functions to
+         operate on multiple watches simultaneously.
+
+         @image html html/images/yarnball.gif
+*/'

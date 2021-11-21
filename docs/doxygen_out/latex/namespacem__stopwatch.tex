@@ -1,0 +1,2061 @@
+\hypertarget{namespacem__stopwatch}{}\doxysection{m\+\_\+stopwatch Module Reference}
+\label{namespacem__stopwatch}\index{m\_stopwatch@{m\_stopwatch}}
+\doxysubsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structm__stopwatch_1_1clocks}{clocks}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1create__watch}{create\+\_\+watch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1create__watchgroup}{create\+\_\+watchgroup}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1destroy__watch}{destroy\+\_\+watch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1end__pause__watch}{end\+\_\+pause\+\_\+watch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1join__watchgroup}{join\+\_\+watchgroup}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1leave__watchgroup}{leave\+\_\+watchgroup}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1option__stopwatch}{option\+\_\+stopwatch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1pause__watch}{pause\+\_\+watch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1print__watch}{print\+\_\+watch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1read__watch}{read\+\_\+watch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1reset__watch}{reset\+\_\+watch}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1start__watch}{start\+\_\+watch}}
+\item 
+type \mbox{\hyperlink{structm__stopwatch_1_1status__type}{status\+\_\+type}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1stop__watch}{stop\+\_\+watch}}
+\item 
+type \mbox{\hyperlink{structm__stopwatch_1_1watch__actual}{watch\+\_\+actual}}
+\item 
+type \mbox{\hyperlink{structm__stopwatch_1_1watch__list}{watch\+\_\+list}}
+\item 
+type \mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}
+\item 
+type \mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}
+\item 
+type \mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}
+\item 
+interface \mbox{\hyperlink{interfacem__stopwatch_1_1which__clocks}{which\+\_\+clocks}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aa5b637cf7ea111bd835ea3c0224ae8d6}{create\+\_\+watch\+\_\+actual}} (watch, clock, name, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a20bb67096d0fa8c6d12c8ae0022cc815}{create\+\_\+watch\+\_\+aa}} (watch, clock, name, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a756111aaa293cf98f78d2bf93eb58723}{create\+\_\+watch\+\_\+as}} (watch, clock, name, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aee0f1d95fc46e6d8008b931e0ec60075}{create\+\_\+watch\+\_\+sa}} (watch, clock, name, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a189c66a0795f7cfe9b1f2d2be3248f2c}{create\+\_\+watch\+\_\+ss}} (watch, clock, name, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a04d101b90fcf3f9678604f95f9768a63}{destroy\+\_\+watch\+\_\+actual}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a797f3a482e663407c89b981f41d7349b}{destroy\+\_\+watch\+\_\+aa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a96a4051d4baf7bd447bc16c0b47983d4}{destroy\+\_\+watch\+\_\+as}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a56c7eb5332f1d56b46bfc9a3a9b10134}{destroy\+\_\+watch\+\_\+sa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a52d004e036a839d4513629cc4cb158c7}{destroy\+\_\+watch\+\_\+ss}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a80ef48faa6df7821de6ef06c0fa650fe}{start\+\_\+watch\+\_\+actual}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a376a3381824a3edde6f1c96663035c58}{start\+\_\+watch\+\_\+ga}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a7c2f2f99682a7309aa136e7129bd3591}{start\+\_\+watch\+\_\+gs}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ab76844fff5eb77d00bf4db5516902414}{start\+\_\+watch\+\_\+aa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a6068b7fef26a5ab12f7b92a765fe32ca}{start\+\_\+watch\+\_\+as}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a4bd2594f2e02c3b97ff6f0556477b720}{start\+\_\+watch\+\_\+sa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a8be3c59cc9a0333ebe966ae718d1d856}{start\+\_\+watch\+\_\+ss}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a24cd395f8edd9999704a1ba6444267e8}{stop\+\_\+watch\+\_\+actual}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a4e078bf14eb68674747cdb6970444f96}{stop\+\_\+watch\+\_\+ga}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_afc518d20fded06c7da4a9eba0df5e41a}{stop\+\_\+watch\+\_\+gs}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_afa380a4a41a9059977ffef300380d8f2}{stop\+\_\+watch\+\_\+aa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aa9adc6b0a3fa0ccf5c542000f0b7925c}{stop\+\_\+watch\+\_\+as}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a7486f3bc54b8bf0313f595151927a56c}{stop\+\_\+watch\+\_\+sa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ad2412b50e118e372b548e3b9317f9ed4}{stop\+\_\+watch\+\_\+ss}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a70b2f142c88aae3054e06c0884197de2}{reset\+\_\+watch\+\_\+actual}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aeeaefcdbbde78f813b93212704a46ce2}{reset\+\_\+watch\+\_\+ga}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a9044e009bd733b8a19724839001c496f}{reset\+\_\+watch\+\_\+gs}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ab6cfebb215292cc061f472aedb2dbb93}{reset\+\_\+watch\+\_\+aa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a05ff195ab84cacf71bbb2c646c562888}{reset\+\_\+watch\+\_\+as}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a845b765415e8f229b7f3251a96eaccc6}{reset\+\_\+watch\+\_\+sa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a547e3482f3b6f3ff40e9d2f178f73095}{reset\+\_\+watch\+\_\+ss}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a7c4ebc164b1871203ab72693f73038c0}{pause\+\_\+watch\+\_\+actual}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aaba5f0339d92da284d233dcb2f4d083a}{pause\+\_\+watch\+\_\+ga}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a25c025ae33c702473780e6d53dd5e054}{pause\+\_\+watch\+\_\+gs}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a7ebcc1a6c6636aa2ff91b549b68dfcca}{pause\+\_\+watch\+\_\+aa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a7e89d5f8738809ee67019645810aa9d5}{pause\+\_\+watch\+\_\+as}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a5101b247e586498a826e1a7819bf13d5}{pause\+\_\+watch\+\_\+sa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_afb410e70a5b4002d5028e0a284393959}{pause\+\_\+watch\+\_\+ss}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a8bbf8dd3f4d63f2047e8bbd51d998a16}{end\+\_\+pause\+\_\+watch\+\_\+actual}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a9b7a584834f64f147b50fafd7574ef61}{end\+\_\+pause\+\_\+watch\+\_\+ga}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a73243081be89522031b0767e9141663a}{end\+\_\+pause\+\_\+watch\+\_\+gs}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a435c9495ff60ec1dc27d4b41f4030582}{end\+\_\+pause\+\_\+watch\+\_\+aa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_abf357521b2751b550b6097542dadf213}{end\+\_\+pause\+\_\+watch\+\_\+as}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a4e478402d1066b90c1807d5fddb7e803}{end\+\_\+pause\+\_\+watch\+\_\+sa}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a1aeced31682c43f2ead6efaf679cad8c}{end\+\_\+pause\+\_\+watch\+\_\+ss}} (watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a5cac73ed1e81ddd74796a45b37b31ec4}{read\+\_\+watch\+\_\+actual}} (read\+\_\+result, watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a528d4073fce87b4e438a9cfbe0f12549}{read\+\_\+watch\+\_\+aa}} (read\+\_\+result, watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a653b0acb543b4a6f4d75babffe91e8c8}{read\+\_\+watch\+\_\+ax}} (read\+\_\+result, watch, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a281bc81f897b1e58da49f7fbfa9f304e}{read\+\_\+watch\+\_\+as}} (read\+\_\+result, watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aeff00ff26ea56c282f257e7fa03d2319}{read\+\_\+watch\+\_\+sa}} (read\+\_\+result, watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ae67f8aee930e9258b83b5a551120e4bd}{read\+\_\+watch\+\_\+sx}} (read\+\_\+result, watch, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a89bcd606b0a234679db7c5809e0560f3}{read\+\_\+watch\+\_\+ss}} (read\+\_\+result, watch, clock, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a7c7423ee45c538535f59517d5a34abba}{print\+\_\+watch\+\_\+actual}} (watch, clock, title, form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a53db4833863b567afa71540bd9aad8f5}{print\+\_\+time}} (str, time, form)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a25075198a53d5b347cd1874e79f38bbb}{print\+\_\+watch\+\_\+ga}} (watch, clock, title, form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ab397616c3f1dfa3c10e4587356de3d70}{print\+\_\+watch\+\_\+gs}} (watch, clock, title, form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a1069de62b768281802b7d9528929f216}{print\+\_\+watch\+\_\+aa}} (watch, clock, title, form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a8c401a6a0108a2cd08e46cc5c9694f81}{print\+\_\+watch\+\_\+as}} (watch, clock, title, form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aa4b391b6d6f238d60db1630ff32f4a33}{print\+\_\+watch\+\_\+sa}} (watch, clock, title, form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aefcb05a2035a7204aefdd3e88c5621cc}{print\+\_\+watch\+\_\+ss}} (watch, clock, title, form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a01b27391a14a126d017fdacb139d92ca}{option\+\_\+stopwatch\+\_\+a}} (default\+\_\+clock, io\+\_\+unit\+\_\+print, io\+\_\+unit\+\_\+error, print\+\_\+errors, abort\+\_\+errors, print\+\_\+form, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a9667f04e61746b7d2b74e9de0d707af0}{option\+\_\+stopwatch\+\_\+s}} (default\+\_\+clock, io\+\_\+unit\+\_\+print, io\+\_\+unit\+\_\+error, print\+\_\+errors, abort\+\_\+errors, print\+\_\+form, err)
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__stopwatch_a16430afb6979f137951c6d572903e5c5}{inquiry\+\_\+stopwatch}} (default\+\_\+clock, io\+\_\+unit\+\_\+print, io\+\_\+unit\+\_\+error, print\+\_\+errors, abort\+\_\+errors, print\+\_\+form, cpu\+\_\+avail, user\+\_\+avail, sys\+\_\+avail, wall\+\_\+avail, cpu\+\_\+prec, wall\+\_\+prec, version, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_abd31bbf07f8a1571c0ed46f9afc61667}{create\+\_\+watchgroup\+\_\+actual}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a67e6ae5ff7326a3b3f9effc4e4fff281}{create\+\_\+watchgroup\+\_\+a}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a703105817c40afaacbda440167c539f4}{create\+\_\+watchgroup\+\_\+s}} (watch, handle, err)
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__stopwatch_a5441e214dd82a2356ed4f4fe892cbb51}{destroy\+\_\+watchgroup}} (handle, err)
+\item 
+recursive subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a5b5053a6d9b4a5c8395c25510fb99790}{free\+\_\+watch\+\_\+list}} (list\+\_\+entry, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ab39cca0de1fcfb5edb0991449b59a48b}{join\+\_\+watchgroup\+\_\+actual}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ac991d5dc751a278faf62f78863b88330}{join\+\_\+watchgroup\+\_\+a}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_ab3cc8ca14a1c99895e0dec06d0119cac}{join\+\_\+watchgroup\+\_\+s}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_aafa77066f550b13607b7b8dd970ba1b4}{leave\+\_\+watchgroup\+\_\+actual}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_af63fc0f9b537a76feec75584dfa4c95b}{leave\+\_\+watchgroup\+\_\+a}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a9acf515866a63a203530c03d8fe59b98}{leave\+\_\+watchgroup\+\_\+s}} (watch, handle, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a38967ac58362f42dc3c5cc27acbdb24f}{which\+\_\+clocks\+\_\+a}} (clock, from, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a2438913aaa1966dfa18811ff048d642b}{which\+\_\+clocks\+\_\+s}} (clock, from, err)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__stopwatch_a8129c70e425409f9dc6666729f5b5c9c}{err\+\_\+handler\+\_\+watch}} (code, routine, string1, string2, err)
+\item 
+subroutine \mbox{\hyperlink{namespacem__stopwatch_a7ea32569e96f968787498860fdb4d1f5}{system\+\_\+cpu\+\_\+time}} (total, user, system)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len=16), parameter, private \mbox{\hyperlink{namespacem__stopwatch_af92219c7ffaec61677d2eeb5004e598c}{sw\+\_\+version}} = \char`\"{}1.\+1\char`\"{}
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_ab81a5f83e4190cfadc0312bfb82042a8}{stopped}} = 1
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_ae9aaee11cd20802153cf7e880f9d3c3e}{running}} = 2
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_af9caaa877a1be74f00ecbab817ffa65c}{paused}} = 3
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a1add492246e686a4018076984065cee0}{omitted}} = 4
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a07067757e5248e34a59473135d6ff491}{err\+\_\+create}} = 1
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_ad3dc0decb1422b8e2226d7f6b86a2994}{err\+\_\+bad\+\_\+state}} = 2
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_afc3962f5eafcda98b0ad803dc1b28cb9}{err\+\_\+unk\+\_\+state}} = 4
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a885cb53744fec08e407298ee970a4a53}{err\+\_\+clock}} = 8
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_acaa885b35cdc454edb5812b95b18883d}{err\+\_\+tmc}} = 16
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a337c5ec4e2186142778c2799953e3fe3}{err\+\_\+names}} = 32
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a6652c14fa8a139ea7b5a9fdd398fc5cc}{err\+\_\+c2long}} = 64
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a1c604413553a07ab9a6aad2b069c5550}{err\+\_\+group}} = 128
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a1a28d40aeec8f031d0be2736dea2dcb0}{err\+\_\+io}} = 256
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a00c8cbc3b0095ebfbcfd00e7f815171e}{err\+\_\+alloc}} = 512
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a7e2fd6739245fccd789135d8a1a5b9db}{err\+\_\+dealloc}} = 1024
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a3f65b21696fb62f2c040db063d475418}{err\+\_\+form}} = 2048
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_aa5f2b7700fd32f070e22af9950c47805}{clock\+\_\+len}} = 4
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_a90c3eba08ec94bd1499d3afcd621d045}{name\+\_\+len}} = 132
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacem__stopwatch_ae96391d876b6e7b05510e339a2e68d20}{form\+\_\+len}} = 12
+\item 
+logical, private \mbox{\hyperlink{namespacem__stopwatch_a6856aa4d5ac6088d533a30e1087bb9c8}{do\+\_\+cpu}}
+\item 
+logical, private \mbox{\hyperlink{namespacem__stopwatch_a29b343b01ae1c7098ed8f78872f8f9e2}{do\+\_\+user}}
+\item 
+logical, private \mbox{\hyperlink{namespacem__stopwatch_a252497fad53bb1f78a57df3a36ecc963}{do\+\_\+sys}}
+\item 
+logical, private \mbox{\hyperlink{namespacem__stopwatch_a47f4d2cbcd792fa3ad9eab7b216b06c3}{do\+\_\+wall}}
+\item 
+character(len=\mbox{\hyperlink{namespacem__stopwatch_aa5f2b7700fd32f070e22af9950c47805}{clock\+\_\+len}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacem__stopwatch_a779dc9ad87f18ac158e8ac6cb47601e4}{default\+\_\+clocks}}
+\item 
+integer, save, private \mbox{\hyperlink{namespacem__stopwatch_a3f5d3edd3b740437b0e59f64bc956402}{iounit}} = 6
+\item 
+integer, save, private \mbox{\hyperlink{namespacem__stopwatch_a1a56c421f8dda3ea8ff78ee49d1d4e11}{errunit}} = 6
+\item 
+logical, save, private \mbox{\hyperlink{namespacem__stopwatch_a8092ca2d20b2b127a24fb4cb906b96be}{errprint}} = .true.
+\item 
+logical, save, private \mbox{\hyperlink{namespacem__stopwatch_ab704edc792bb62b6966e6d390be99a65}{errabort}} = .false.
+\item 
+character(len=\mbox{\hyperlink{namespacem__stopwatch_ae96391d876b6e7b05510e339a2e68d20}{form\+\_\+len}}), save, private \mbox{\hyperlink{namespacem__stopwatch_a8bd2994267296dcfb8d6ca82c30e0db3}{default\+\_\+form}} = \char`\"{}sec\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}                 M_StopWatch Version 1.1
+\end{DoxyVerb}
+
+
+M\+\_\+\+Stop\+Watch is a Fortran 90 module for portable, easy-\/to-\/use measurement of execution time. It supports four clocks
+
+o wall clock o C\+PU clock o user C\+PU clock o system C\+PU clock
+
+and returns all times in seconds.
+
+It provides a simple means of determining which clocks are available, and the precision of those clocks.
+
+M\+\_\+\+Stop\+Watch is used by instrumenting your code with subroutine calls that mimic the operation of a stop watch. M\+\_\+\+Stop\+Watch supports multiple watches, and provides the concept of watch groups to allow functions to operate on multiple watches simultaneously.
+
+For further information on using M\+\_\+\+Stop\+Watch, see the User Guide or man pages.
+
+The M\+\_\+\+Stop\+Watch software and documentation have been produced as part of work done by the U.\+S. Government, and are not subject to copyright in the United States.
+
+William F. Mitchell \href{mailto:mitchell@cam.nist.gov}{\texttt{ mitchell@cam.\+nist.\+gov}} National Institute of Standards and Technology December 2, 1996
+
+The research software provided on this web site (“software”) is provided by N\+I\+ST as a public service. You may use, copy and distribute copies of the software in any medium, provided that you keep intact this entire notice. You may improve, modify and create derivative works of the software or any portion of the software, and you may copy and distribute such modifications or works. Modified works should carry a notice stating that you changed the software and should note the date and nature of any such change. Please explicitly acknowledge the National Institute of Standards and Technology as the source of the software.
+
+The software is expressly provided “\+AS I\+S.\+” N\+I\+ST M\+A\+K\+ES NO W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, \hypertarget{namespacem__stopwatch_autotoc_md0}{}\doxysubsubsection{E\+X\+P\+R\+E\+S\+S, I\+M\+P\+L\+I\+E\+D, I\+N F\+A\+C\+T O\+R A\+R\+I\+S\+I\+N\+G B\+Y O\+P\+E\+R\+A\+T\+I\+O\+N O\+F L\+A\+W, I\+N\+C\+L\+U\+D\+I\+N\+G, W\+I\+T\+H\+O\+UT}\label{namespacem__stopwatch_autotoc_md0}
+\hypertarget{namespacem__stopwatch_autotoc_md1}{}\doxysubsubsection{L\+I\+M\+I\+T\+A\+T\+I\+O\+N, T\+H\+E I\+M\+P\+L\+I\+E\+D W\+A\+R\+R\+A\+N\+T\+Y O\+F M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+T\+Y, F\+I\+T\+N\+E\+S\+S F\+O\+R A P\+A\+R\+T\+I\+C\+U\+L\+AR}\label{namespacem__stopwatch_autotoc_md1}
+\hypertarget{namespacem__stopwatch_autotoc_md2}{}\doxysubsubsection{P\+U\+R\+P\+O\+S\+E, N\+O\+N-\/\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+N\+T A\+N\+D D\+A\+T\+A A\+C\+C\+U\+R\+A\+C\+Y. N\+I\+S\+T N\+E\+I\+T\+H\+E\+R R\+E\+P\+R\+E\+S\+E\+N\+T\+S N\+OR}\label{namespacem__stopwatch_autotoc_md2}
+\hypertarget{namespacem__stopwatch_autotoc_md3}{}\doxysubsubsection{W\+A\+R\+R\+A\+N\+T\+S T\+H\+A\+T T\+H\+E O\+P\+E\+R\+A\+T\+I\+O\+N O\+F T\+H\+E S\+O\+F\+T\+W\+A\+R\+E W\+I\+L\+L B\+E U\+N\+I\+N\+T\+E\+R\+R\+U\+P\+T\+E\+D O\+R E\+R\+R\+O\+R-\/\+F\+R\+E\+E,}\label{namespacem__stopwatch_autotoc_md3}
+\hypertarget{namespacem__stopwatch_autotoc_md4}{}\doxysubsubsection{O\+R T\+H\+A\+T A\+N\+Y D\+E\+F\+E\+C\+T\+S W\+I\+L\+L B\+E C\+O\+R\+R\+E\+C\+T\+E\+D. N\+I\+S\+T D\+O\+E\+S N\+O\+T W\+A\+R\+R\+A\+N\+T O\+R M\+A\+K\+E A\+NY}\label{namespacem__stopwatch_autotoc_md4}
+\hypertarget{namespacem__stopwatch_autotoc_md5}{}\doxysubsubsection{R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+N\+S R\+E\+G\+A\+R\+D\+I\+N\+G T\+H\+E U\+S\+E O\+F T\+H\+E S\+O\+F\+T\+W\+A\+R\+E O\+R T\+H\+E R\+E\+S\+U\+L\+T\+S T\+H\+E\+R\+E\+O\+F,}\label{namespacem__stopwatch_autotoc_md5}
+\hypertarget{namespacem__stopwatch_autotoc_md6}{}\doxysubsubsection{I\+N\+C\+L\+U\+D\+I\+N\+G B\+U\+T N\+O\+T L\+I\+M\+I\+T\+E\+D T\+O T\+H\+E C\+O\+R\+R\+E\+C\+T\+N\+E\+S\+S, A\+C\+C\+U\+R\+A\+C\+Y, R\+E\+L\+I\+A\+B\+I\+L\+I\+T\+Y, OR}\label{namespacem__stopwatch_autotoc_md6}
+\hypertarget{namespacem__stopwatch_autotoc_md7}{}\doxysubsubsection{U\+S\+E\+F\+U\+L\+N\+E\+S\+S O\+F T\+H\+E S\+O\+F\+T\+W\+A\+R\+E.}\label{namespacem__stopwatch_autotoc_md7}
+You are solely responsible for determining the appropriateness of using and distributing the software and you assume all risks associated with its use, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and the unavailability or interruption of operation. This software is not intended to be used in any situation where a failure could cause risk of injury or damage to property. The software was developed by N\+I\+ST employees. N\+I\+ST employee contributions are not subject to copyright protection within the United States. 
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacem__stopwatch_a20bb67096d0fa8c6d12c8ae0022cc815}\label{namespacem__stopwatch_a20bb67096d0fa8c6d12c8ae0022cc815}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watch\_aa@{create\_watch\_aa}}
+\index{create\_watch\_aa@{create\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watch\_aa()}{create\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(out)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), dimension(\+:), intent(in), optional}]{name,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References create\+\_\+watch\+\_\+actual(), err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and err\+\_\+names.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a20bb67096d0fa8c6d12c8ae0022cc815_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a20bb67096d0fa8c6d12c8ae0022cc815_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aa5b637cf7ea111bd835ea3c0224ae8d6}\label{namespacem__stopwatch_aa5b637cf7ea111bd835ea3c0224ae8d6}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watch\_actual@{create\_watch\_actual}}
+\index{create\_watch\_actual@{create\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watch\_actual()}{create\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(out)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{name,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+alloc, err\+\_\+c2long, err\+\_\+handler\+\_\+watch(), omitted, and stopped.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aa5b637cf7ea111bd835ea3c0224ae8d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aa5b637cf7ea111bd835ea3c0224ae8d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a756111aaa293cf98f78d2bf93eb58723}\label{namespacem__stopwatch_a756111aaa293cf98f78d2bf93eb58723}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watch\_as@{create\_watch\_as}}
+\index{create\_watch\_as@{create\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watch\_as()}{create\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(out)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{character(len=$\ast$), dimension(\+:), intent(in), optional}]{name,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References create\+\_\+watch\+\_\+aa(), and default\+\_\+clocks.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a756111aaa293cf98f78d2bf93eb58723_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aee0f1d95fc46e6d8008b931e0ec60075}\label{namespacem__stopwatch_aee0f1d95fc46e6d8008b931e0ec60075}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watch\_sa@{create\_watch\_sa}}
+\index{create\_watch\_sa@{create\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watch\_sa()}{create\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(out)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{name,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References create\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aee0f1d95fc46e6d8008b931e0ec60075_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a189c66a0795f7cfe9b1f2d2be3248f2c}\label{namespacem__stopwatch_a189c66a0795f7cfe9b1f2d2be3248f2c}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watch\_ss@{create\_watch\_ss}}
+\index{create\_watch\_ss@{create\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watch\_ss()}{create\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(out)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{name,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References create\+\_\+watch\+\_\+actual(), and default\+\_\+clocks.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a189c66a0795f7cfe9b1f2d2be3248f2c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a67e6ae5ff7326a3b3f9effc4e4fff281}\label{namespacem__stopwatch_a67e6ae5ff7326a3b3f9effc4e4fff281}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watchgroup\_a@{create\_watchgroup\_a}}
+\index{create\_watchgroup\_a@{create\_watchgroup\_a}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watchgroup\_a()}{create\_watchgroup\_a()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watchgroup\+\_\+a (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(out)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References create\+\_\+watchgroup\+\_\+actual(), err\+\_\+alloc, err\+\_\+dealloc, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a67e6ae5ff7326a3b3f9effc4e4fff281_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_abd31bbf07f8a1571c0ed46f9afc61667}\label{namespacem__stopwatch_abd31bbf07f8a1571c0ed46f9afc61667}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watchgroup\_actual@{create\_watchgroup\_actual}}
+\index{create\_watchgroup\_actual@{create\_watchgroup\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watchgroup\_actual()}{create\_watchgroup\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watchgroup\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in), optional}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(out), optional}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+create, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_abd31bbf07f8a1571c0ed46f9afc61667_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_abd31bbf07f8a1571c0ed46f9afc61667_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a703105817c40afaacbda440167c539f4}\label{namespacem__stopwatch_a703105817c40afaacbda440167c539f4}} 
+\index{m\_stopwatch@{m\_stopwatch}!create\_watchgroup\_s@{create\_watchgroup\_s}}
+\index{create\_watchgroup\_s@{create\_watchgroup\_s}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{create\_watchgroup\_s()}{create\_watchgroup\_s()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::create\+\_\+watchgroup\+\_\+s (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in), optional}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(out), optional}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References create\+\_\+watchgroup\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a703105817c40afaacbda440167c539f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a797f3a482e663407c89b981f41d7349b}\label{namespacem__stopwatch_a797f3a482e663407c89b981f41d7349b}} 
+\index{m\_stopwatch@{m\_stopwatch}!destroy\_watch\_aa@{destroy\_watch\_aa}}
+\index{destroy\_watch\_aa@{destroy\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{destroy\_watch\_aa()}{destroy\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::destroy\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(inout)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References destroy\+\_\+watch\+\_\+actual(), err\+\_\+alloc, err\+\_\+dealloc, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a797f3a482e663407c89b981f41d7349b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a797f3a482e663407c89b981f41d7349b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a04d101b90fcf3f9678604f95f9768a63}\label{namespacem__stopwatch_a04d101b90fcf3f9678604f95f9768a63}} 
+\index{m\_stopwatch@{m\_stopwatch}!destroy\_watch\_actual@{destroy\_watch\_actual}}
+\index{destroy\_watch\_actual@{destroy\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{destroy\_watch\_actual()}{destroy\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::destroy\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(inout)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+create, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and omitted.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a04d101b90fcf3f9678604f95f9768a63_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a04d101b90fcf3f9678604f95f9768a63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a96a4051d4baf7bd447bc16c0b47983d4}\label{namespacem__stopwatch_a96a4051d4baf7bd447bc16c0b47983d4}} 
+\index{m\_stopwatch@{m\_stopwatch}!destroy\_watch\_as@{destroy\_watch\_as}}
+\index{destroy\_watch\_as@{destroy\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{destroy\_watch\_as()}{destroy\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::destroy\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(inout)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and destroy\+\_\+watch\+\_\+aa().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a96a4051d4baf7bd447bc16c0b47983d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a56c7eb5332f1d56b46bfc9a3a9b10134}\label{namespacem__stopwatch_a56c7eb5332f1d56b46bfc9a3a9b10134}} 
+\index{m\_stopwatch@{m\_stopwatch}!destroy\_watch\_sa@{destroy\_watch\_sa}}
+\index{destroy\_watch\_sa@{destroy\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{destroy\_watch\_sa()}{destroy\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::destroy\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(inout)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References destroy\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a56c7eb5332f1d56b46bfc9a3a9b10134_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a52d004e036a839d4513629cc4cb158c7}\label{namespacem__stopwatch_a52d004e036a839d4513629cc4cb158c7}} 
+\index{m\_stopwatch@{m\_stopwatch}!destroy\_watch\_ss@{destroy\_watch\_ss}}
+\index{destroy\_watch\_ss@{destroy\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{destroy\_watch\_ss()}{destroy\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::destroy\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(inout)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and destroy\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a52d004e036a839d4513629cc4cb158c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a5441e214dd82a2356ed4f4fe892cbb51}\label{namespacem__stopwatch_a5441e214dd82a2356ed4f4fe892cbb51}} 
+\index{m\_stopwatch@{m\_stopwatch}!destroy\_watchgroup@{destroy\_watchgroup}}
+\index{destroy\_watchgroup@{destroy\_watchgroup}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{destroy\_watchgroup()}{destroy\_watchgroup()}}
+{\footnotesize\ttfamily subroutine, public m\+\_\+stopwatch\+::destroy\+\_\+watchgroup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})}
+
+
+
+References err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and free\+\_\+watch\+\_\+list().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a5441e214dd82a2356ed4f4fe892cbb51_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a435c9495ff60ec1dc27d4b41f4030582}\label{namespacem__stopwatch_a435c9495ff60ec1dc27d4b41f4030582}} 
+\index{m\_stopwatch@{m\_stopwatch}!end\_pause\_watch\_aa@{end\_pause\_watch\_aa}}
+\index{end\_pause\_watch\_aa@{end\_pause\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{end\_pause\_watch\_aa()}{end\_pause\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::end\+\_\+pause\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References end\+\_\+pause\+\_\+watch\+\_\+actual(), err\+\_\+alloc, err\+\_\+dealloc, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a435c9495ff60ec1dc27d4b41f4030582_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a435c9495ff60ec1dc27d4b41f4030582_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a8bbf8dd3f4d63f2047e8bbd51d998a16}\label{namespacem__stopwatch_a8bbf8dd3f4d63f2047e8bbd51d998a16}} 
+\index{m\_stopwatch@{m\_stopwatch}!end\_pause\_watch\_actual@{end\_pause\_watch\_actual}}
+\index{end\_pause\_watch\_actual@{end\_pause\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{end\_pause\_watch\_actual()}{end\_pause\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::end\+\_\+pause\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+bad\+\_\+state, err\+\_\+create, err\+\_\+handler\+\_\+watch(), err\+\_\+unk\+\_\+state, omitted, paused, running, stopped, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a8bbf8dd3f4d63f2047e8bbd51d998a16_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a8bbf8dd3f4d63f2047e8bbd51d998a16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_abf357521b2751b550b6097542dadf213}\label{namespacem__stopwatch_abf357521b2751b550b6097542dadf213}} 
+\index{m\_stopwatch@{m\_stopwatch}!end\_pause\_watch\_as@{end\_pause\_watch\_as}}
+\index{end\_pause\_watch\_as@{end\_pause\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{end\_pause\_watch\_as()}{end\_pause\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::end\+\_\+pause\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and end\+\_\+pause\+\_\+watch\+\_\+aa().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_abf357521b2751b550b6097542dadf213_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a9b7a584834f64f147b50fafd7574ef61}\label{namespacem__stopwatch_a9b7a584834f64f147b50fafd7574ef61}} 
+\index{m\_stopwatch@{m\_stopwatch}!end\_pause\_watch\_ga@{end\_pause\_watch\_ga}}
+\index{end\_pause\_watch\_ga@{end\_pause\_watch\_ga}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{end\_pause\_watch\_ga()}{end\_pause\_watch\_ga()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::end\+\_\+pause\+\_\+watch\+\_\+ga (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References end\+\_\+pause\+\_\+watch\+\_\+actual(), err\+\_\+alloc, err\+\_\+dealloc, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a9b7a584834f64f147b50fafd7574ef61_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a9b7a584834f64f147b50fafd7574ef61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a73243081be89522031b0767e9141663a}\label{namespacem__stopwatch_a73243081be89522031b0767e9141663a}} 
+\index{m\_stopwatch@{m\_stopwatch}!end\_pause\_watch\_gs@{end\_pause\_watch\_gs}}
+\index{end\_pause\_watch\_gs@{end\_pause\_watch\_gs}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{end\_pause\_watch\_gs()}{end\_pause\_watch\_gs()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::end\+\_\+pause\+\_\+watch\+\_\+gs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and end\+\_\+pause\+\_\+watch\+\_\+ga().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a73243081be89522031b0767e9141663a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a4e478402d1066b90c1807d5fddb7e803}\label{namespacem__stopwatch_a4e478402d1066b90c1807d5fddb7e803}} 
+\index{m\_stopwatch@{m\_stopwatch}!end\_pause\_watch\_sa@{end\_pause\_watch\_sa}}
+\index{end\_pause\_watch\_sa@{end\_pause\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{end\_pause\_watch\_sa()}{end\_pause\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::end\+\_\+pause\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References end\+\_\+pause\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a4e478402d1066b90c1807d5fddb7e803_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a1aeced31682c43f2ead6efaf679cad8c}\label{namespacem__stopwatch_a1aeced31682c43f2ead6efaf679cad8c}} 
+\index{m\_stopwatch@{m\_stopwatch}!end\_pause\_watch\_ss@{end\_pause\_watch\_ss}}
+\index{end\_pause\_watch\_ss@{end\_pause\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{end\_pause\_watch\_ss()}{end\_pause\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::end\+\_\+pause\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and end\+\_\+pause\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a1aeced31682c43f2ead6efaf679cad8c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a8129c70e425409f9dc6666729f5b5c9c}\label{namespacem__stopwatch_a8129c70e425409f9dc6666729f5b5c9c}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_handler\_watch@{err\_handler\_watch}}
+\index{err\_handler\_watch@{err\_handler\_watch}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_handler\_watch()}{err\_handler\_watch()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::err\+\_\+handler\+\_\+watch (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{code,  }\item[{character(len=$\ast$), intent(in)}]{routine,  }\item[{character(len=$\ast$), intent(in)}]{string1,  }\item[{character(len=$\ast$), intent(in)}]{string2,  }\item[{integer, intent(inout), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+bad\+\_\+state, err\+\_\+c2long, err\+\_\+clock, err\+\_\+create, err\+\_\+dealloc, err\+\_\+form, err\+\_\+group, err\+\_\+io, err\+\_\+names, err\+\_\+tmc, err\+\_\+unk\+\_\+state, errabort, errprint, errunit, and iounit.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacem__stopwatch_a8129c70e425409f9dc6666729f5b5c9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a5b5053a6d9b4a5c8395c25510fb99790}\label{namespacem__stopwatch_a5b5053a6d9b4a5c8395c25510fb99790}} 
+\index{m\_stopwatch@{m\_stopwatch}!free\_watch\_list@{free\_watch\_list}}
+\index{free\_watch\_list@{free\_watch\_list}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{free\_watch\_list()}{free\_watch\_list()}}
+{\footnotesize\ttfamily recursive subroutine, private m\+\_\+stopwatch\+::free\+\_\+watch\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__list}{watch\+\_\+list}}), intent(inout)}]{list\+\_\+entry,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+dealloc, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a5b5053a6d9b4a5c8395c25510fb99790_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a5b5053a6d9b4a5c8395c25510fb99790_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a16430afb6979f137951c6d572903e5c5}\label{namespacem__stopwatch_a16430afb6979f137951c6d572903e5c5}} 
+\index{m\_stopwatch@{m\_stopwatch}!inquiry\_stopwatch@{inquiry\_stopwatch}}
+\index{inquiry\_stopwatch@{inquiry\_stopwatch}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{inquiry\_stopwatch()}{inquiry\_stopwatch()}}
+{\footnotesize\ttfamily subroutine, public m\+\_\+stopwatch\+::inquiry\+\_\+stopwatch (\begin{DoxyParamCaption}\item[{character(len=$\ast$), dimension(\+:), intent(out), optional}]{default\+\_\+clock,  }\item[{integer, intent(out), optional}]{io\+\_\+unit\+\_\+print,  }\item[{integer, intent(out), optional}]{io\+\_\+unit\+\_\+error,  }\item[{logical, intent(out), optional}]{print\+\_\+errors,  }\item[{logical, intent(out), optional}]{abort\+\_\+errors,  }\item[{character(len=$\ast$), intent(out), optional}]{print\+\_\+form,  }\item[{logical, intent(out), optional}]{cpu\+\_\+avail,  }\item[{logical, intent(out), optional}]{user\+\_\+avail,  }\item[{logical, intent(out), optional}]{sys\+\_\+avail,  }\item[{logical, intent(out), optional}]{wall\+\_\+avail,  }\item[{real, intent(out), optional}]{cpu\+\_\+prec,  }\item[{real, intent(out), optional}]{wall\+\_\+prec,  }\item[{character(len=$\ast$), intent(out), optional}]{version,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})}
+
+
+
+References default\+\_\+clocks, default\+\_\+form, errabort, errprint, errunit, iounit, sw\+\_\+version, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a16430afb6979f137951c6d572903e5c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ac991d5dc751a278faf62f78863b88330}\label{namespacem__stopwatch_ac991d5dc751a278faf62f78863b88330}} 
+\index{m\_stopwatch@{m\_stopwatch}!join\_watchgroup\_a@{join\_watchgroup\_a}}
+\index{join\_watchgroup\_a@{join\_watchgroup\_a}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{join\_watchgroup\_a()}{join\_watchgroup\_a()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::join\+\_\+watchgroup\+\_\+a (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and join\+\_\+watchgroup\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ac991d5dc751a278faf62f78863b88330_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ab39cca0de1fcfb5edb0991449b59a48b}\label{namespacem__stopwatch_ab39cca0de1fcfb5edb0991449b59a48b}} 
+\index{m\_stopwatch@{m\_stopwatch}!join\_watchgroup\_actual@{join\_watchgroup\_actual}}
+\index{join\_watchgroup\_actual@{join\_watchgroup\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{join\_watchgroup\_actual()}{join\_watchgroup\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::join\+\_\+watchgroup\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+create, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ab39cca0de1fcfb5edb0991449b59a48b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ab39cca0de1fcfb5edb0991449b59a48b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ab3cc8ca14a1c99895e0dec06d0119cac}\label{namespacem__stopwatch_ab3cc8ca14a1c99895e0dec06d0119cac}} 
+\index{m\_stopwatch@{m\_stopwatch}!join\_watchgroup\_s@{join\_watchgroup\_s}}
+\index{join\_watchgroup\_s@{join\_watchgroup\_s}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{join\_watchgroup\_s()}{join\_watchgroup\_s()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::join\+\_\+watchgroup\+\_\+s (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References join\+\_\+watchgroup\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ab3cc8ca14a1c99895e0dec06d0119cac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_af63fc0f9b537a76feec75584dfa4c95b}\label{namespacem__stopwatch_af63fc0f9b537a76feec75584dfa4c95b}} 
+\index{m\_stopwatch@{m\_stopwatch}!leave\_watchgroup\_a@{leave\_watchgroup\_a}}
+\index{leave\_watchgroup\_a@{leave\_watchgroup\_a}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{leave\_watchgroup\_a()}{leave\_watchgroup\_a()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::leave\+\_\+watchgroup\+\_\+a (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and leave\+\_\+watchgroup\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_af63fc0f9b537a76feec75584dfa4c95b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aafa77066f550b13607b7b8dd970ba1b4}\label{namespacem__stopwatch_aafa77066f550b13607b7b8dd970ba1b4}} 
+\index{m\_stopwatch@{m\_stopwatch}!leave\_watchgroup\_actual@{leave\_watchgroup\_actual}}
+\index{leave\_watchgroup\_actual@{leave\_watchgroup\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{leave\_watchgroup\_actual()}{leave\_watchgroup\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::leave\+\_\+watchgroup\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+dealloc, err\+\_\+group, and err\+\_\+handler\+\_\+watch().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aafa77066f550b13607b7b8dd970ba1b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacem__stopwatch_aafa77066f550b13607b7b8dd970ba1b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a9acf515866a63a203530c03d8fe59b98}\label{namespacem__stopwatch_a9acf515866a63a203530c03d8fe59b98}} 
+\index{m\_stopwatch@{m\_stopwatch}!leave\_watchgroup\_s@{leave\_watchgroup\_s}}
+\index{leave\_watchgroup\_s@{leave\_watchgroup\_s}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{leave\_watchgroup\_s()}{leave\_watchgroup\_s()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::leave\+\_\+watchgroup\+\_\+s (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{handle,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References leave\+\_\+watchgroup\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a9acf515866a63a203530c03d8fe59b98_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a01b27391a14a126d017fdacb139d92ca}\label{namespacem__stopwatch_a01b27391a14a126d017fdacb139d92ca}} 
+\index{m\_stopwatch@{m\_stopwatch}!option\_stopwatch\_a@{option\_stopwatch\_a}}
+\index{option\_stopwatch\_a@{option\_stopwatch\_a}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{option\_stopwatch\_a()}{option\_stopwatch\_a()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::option\+\_\+stopwatch\+\_\+a (\begin{DoxyParamCaption}\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{default\+\_\+clock,  }\item[{integer, intent(in), optional}]{io\+\_\+unit\+\_\+print,  }\item[{integer, intent(in), optional}]{io\+\_\+unit\+\_\+error,  }\item[{logical, intent(in), optional}]{print\+\_\+errors,  }\item[{logical, intent(in), optional}]{abort\+\_\+errors,  }\item[{character(len=$\ast$), intent(in), optional}]{print\+\_\+form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, default\+\_\+form, err\+\_\+alloc, err\+\_\+clock, err\+\_\+dealloc, err\+\_\+form, err\+\_\+handler\+\_\+watch(), err\+\_\+io, err\+\_\+tmc, errabort, errprint, errunit, iounit, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a01b27391a14a126d017fdacb139d92ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a01b27391a14a126d017fdacb139d92ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a9667f04e61746b7d2b74e9de0d707af0}\label{namespacem__stopwatch_a9667f04e61746b7d2b74e9de0d707af0}} 
+\index{m\_stopwatch@{m\_stopwatch}!option\_stopwatch\_s@{option\_stopwatch\_s}}
+\index{option\_stopwatch\_s@{option\_stopwatch\_s}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{option\_stopwatch\_s()}{option\_stopwatch\_s()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::option\+\_\+stopwatch\+\_\+s (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in), optional}]{default\+\_\+clock,  }\item[{integer, intent(in), optional}]{io\+\_\+unit\+\_\+print,  }\item[{integer, intent(in), optional}]{io\+\_\+unit\+\_\+error,  }\item[{logical, intent(in), optional}]{print\+\_\+errors,  }\item[{logical, intent(in), optional}]{abort\+\_\+errors,  }\item[{character(len=$\ast$), intent(in), optional}]{print\+\_\+form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References option\+\_\+stopwatch\+\_\+a().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a9667f04e61746b7d2b74e9de0d707af0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a7ebcc1a6c6636aa2ff91b549b68dfcca}\label{namespacem__stopwatch_a7ebcc1a6c6636aa2ff91b549b68dfcca}} 
+\index{m\_stopwatch@{m\_stopwatch}!pause\_watch\_aa@{pause\_watch\_aa}}
+\index{pause\_watch\_aa@{pause\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{pause\_watch\_aa()}{pause\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::pause\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and pause\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7ebcc1a6c6636aa2ff91b549b68dfcca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7ebcc1a6c6636aa2ff91b549b68dfcca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a7c4ebc164b1871203ab72693f73038c0}\label{namespacem__stopwatch_a7c4ebc164b1871203ab72693f73038c0}} 
+\index{m\_stopwatch@{m\_stopwatch}!pause\_watch\_actual@{pause\_watch\_actual}}
+\index{pause\_watch\_actual@{pause\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{pause\_watch\_actual()}{pause\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::pause\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+bad\+\_\+state, err\+\_\+create, err\+\_\+handler\+\_\+watch(), err\+\_\+unk\+\_\+state, omitted, paused, running, stopped, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7c4ebc164b1871203ab72693f73038c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7c4ebc164b1871203ab72693f73038c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a7e89d5f8738809ee67019645810aa9d5}\label{namespacem__stopwatch_a7e89d5f8738809ee67019645810aa9d5}} 
+\index{m\_stopwatch@{m\_stopwatch}!pause\_watch\_as@{pause\_watch\_as}}
+\index{pause\_watch\_as@{pause\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{pause\_watch\_as()}{pause\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::pause\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and pause\+\_\+watch\+\_\+aa().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7e89d5f8738809ee67019645810aa9d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aaba5f0339d92da284d233dcb2f4d083a}\label{namespacem__stopwatch_aaba5f0339d92da284d233dcb2f4d083a}} 
+\index{m\_stopwatch@{m\_stopwatch}!pause\_watch\_ga@{pause\_watch\_ga}}
+\index{pause\_watch\_ga@{pause\_watch\_ga}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{pause\_watch\_ga()}{pause\_watch\_ga()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::pause\+\_\+watch\+\_\+ga (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and pause\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aaba5f0339d92da284d233dcb2f4d083a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aaba5f0339d92da284d233dcb2f4d083a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a25c025ae33c702473780e6d53dd5e054}\label{namespacem__stopwatch_a25c025ae33c702473780e6d53dd5e054}} 
+\index{m\_stopwatch@{m\_stopwatch}!pause\_watch\_gs@{pause\_watch\_gs}}
+\index{pause\_watch\_gs@{pause\_watch\_gs}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{pause\_watch\_gs()}{pause\_watch\_gs()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::pause\+\_\+watch\+\_\+gs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and pause\+\_\+watch\+\_\+ga().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a25c025ae33c702473780e6d53dd5e054_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a5101b247e586498a826e1a7819bf13d5}\label{namespacem__stopwatch_a5101b247e586498a826e1a7819bf13d5}} 
+\index{m\_stopwatch@{m\_stopwatch}!pause\_watch\_sa@{pause\_watch\_sa}}
+\index{pause\_watch\_sa@{pause\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{pause\_watch\_sa()}{pause\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::pause\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References pause\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a5101b247e586498a826e1a7819bf13d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_afb410e70a5b4002d5028e0a284393959}\label{namespacem__stopwatch_afb410e70a5b4002d5028e0a284393959}} 
+\index{m\_stopwatch@{m\_stopwatch}!pause\_watch\_ss@{pause\_watch\_ss}}
+\index{pause\_watch\_ss@{pause\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{pause\_watch\_ss()}{pause\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::pause\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and pause\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_afb410e70a5b4002d5028e0a284393959_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a53db4833863b567afa71540bd9aad8f5}\label{namespacem__stopwatch_a53db4833863b567afa71540bd9aad8f5}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_time@{print\_time}}
+\index{print\_time@{print\_time}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_time()}{print\_time()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+time (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{str,  }\item[{real, intent(in)}]{time,  }\item[{character(len=$\ast$), intent(in)}]{form }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References iounit.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a53db4833863b567afa71540bd9aad8f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a1069de62b768281802b7d9528929f216}\label{namespacem__stopwatch_a1069de62b768281802b7d9528929f216}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_watch\_aa@{print\_watch\_aa}}
+\index{print\_watch\_aa@{print\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_watch\_aa()}{print\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{title,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and print\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a1069de62b768281802b7d9528929f216_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacem__stopwatch_a1069de62b768281802b7d9528929f216_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a7c7423ee45c538535f59517d5a34abba}\label{namespacem__stopwatch_a7c7423ee45c538535f59517d5a34abba}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_watch\_actual@{print\_watch\_actual}}
+\index{print\_watch\_actual@{print\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_watch\_actual()}{print\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{title,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+form, do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+create, err\+\_\+form, err\+\_\+handler\+\_\+watch(), err\+\_\+io, iounit, omitted, and print\+\_\+time().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7c7423ee45c538535f59517d5a34abba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7c7423ee45c538535f59517d5a34abba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a8c401a6a0108a2cd08e46cc5c9694f81}\label{namespacem__stopwatch_a8c401a6a0108a2cd08e46cc5c9694f81}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_watch\_as@{print\_watch\_as}}
+\index{print\_watch\_as@{print\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_watch\_as()}{print\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{title,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and print\+\_\+watch\+\_\+aa().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a8c401a6a0108a2cd08e46cc5c9694f81_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a25075198a53d5b347cd1874e79f38bbb}\label{namespacem__stopwatch_a25075198a53d5b347cd1874e79f38bbb}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_watch\_ga@{print\_watch\_ga}}
+\index{print\_watch\_ga@{print\_watch\_ga}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_watch\_ga()}{print\_watch\_ga()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+watch\+\_\+ga (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{title,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and print\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a25075198a53d5b347cd1874e79f38bbb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacem__stopwatch_a25075198a53d5b347cd1874e79f38bbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ab397616c3f1dfa3c10e4587356de3d70}\label{namespacem__stopwatch_ab397616c3f1dfa3c10e4587356de3d70}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_watch\_gs@{print\_watch\_gs}}
+\index{print\_watch\_gs@{print\_watch\_gs}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_watch\_gs()}{print\_watch\_gs()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+watch\+\_\+gs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{title,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and print\+\_\+watch\+\_\+ga().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ab397616c3f1dfa3c10e4587356de3d70_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aa4b391b6d6f238d60db1630ff32f4a33}\label{namespacem__stopwatch_aa4b391b6d6f238d60db1630ff32f4a33}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_watch\_sa@{print\_watch\_sa}}
+\index{print\_watch\_sa@{print\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_watch\_sa()}{print\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{title,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References print\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aa4b391b6d6f238d60db1630ff32f4a33_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aefcb05a2035a7204aefdd3e88c5621cc}\label{namespacem__stopwatch_aefcb05a2035a7204aefdd3e88c5621cc}} 
+\index{m\_stopwatch@{m\_stopwatch}!print\_watch\_ss@{print\_watch\_ss}}
+\index{print\_watch\_ss@{print\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{print\_watch\_ss()}{print\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::print\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{character(len=$\ast$), intent(in), optional}]{title,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and print\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aefcb05a2035a7204aefdd3e88c5621cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a528d4073fce87b4e438a9cfbe0f12549}\label{namespacem__stopwatch_a528d4073fce87b4e438a9cfbe0f12549}} 
+\index{m\_stopwatch@{m\_stopwatch}!read\_watch\_aa@{read\_watch\_aa}}
+\index{read\_watch\_aa@{read\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{read\_watch\_aa()}{read\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::read\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{real, dimension(\+:,\+:), pointer}]{read\+\_\+result,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and read\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a528d4073fce87b4e438a9cfbe0f12549_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a5cac73ed1e81ddd74796a45b37b31ec4}\label{namespacem__stopwatch_a5cac73ed1e81ddd74796a45b37b31ec4}} 
+\index{m\_stopwatch@{m\_stopwatch}!read\_watch\_actual@{read\_watch\_actual}}
+\index{read\_watch\_actual@{read\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{read\_watch\_actual()}{read\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::read\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{real, dimension(\+:,\+:), pointer}]{read\+\_\+result,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+alloc, err\+\_\+create, err\+\_\+handler\+\_\+watch(), err\+\_\+unk\+\_\+state, omitted, paused, running, stopped, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a5cac73ed1e81ddd74796a45b37b31ec4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a5cac73ed1e81ddd74796a45b37b31ec4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a281bc81f897b1e58da49f7fbfa9f304e}\label{namespacem__stopwatch_a281bc81f897b1e58da49f7fbfa9f304e}} 
+\index{m\_stopwatch@{m\_stopwatch}!read\_watch\_as@{read\_watch\_as}}
+\index{read\_watch\_as@{read\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{read\_watch\_as()}{read\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::read\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{real, dimension(\+:), pointer}]{read\+\_\+result,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and read\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a281bc81f897b1e58da49f7fbfa9f304e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a653b0acb543b4a6f4d75babffe91e8c8}\label{namespacem__stopwatch_a653b0acb543b4a6f4d75babffe91e8c8}} 
+\index{m\_stopwatch@{m\_stopwatch}!read\_watch\_ax@{read\_watch\_ax}}
+\index{read\_watch\_ax@{read\_watch\_ax}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{read\_watch\_ax()}{read\_watch\_ax()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::read\+\_\+watch\+\_\+ax (\begin{DoxyParamCaption}\item[{real, dimension(\+:,\+:), pointer}]{read\+\_\+result,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and read\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a653b0acb543b4a6f4d75babffe91e8c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aeff00ff26ea56c282f257e7fa03d2319}\label{namespacem__stopwatch_aeff00ff26ea56c282f257e7fa03d2319}} 
+\index{m\_stopwatch@{m\_stopwatch}!read\_watch\_sa@{read\_watch\_sa}}
+\index{read\_watch\_sa@{read\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{read\_watch\_sa()}{read\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::read\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{real, dimension(\+:), pointer}]{read\+\_\+result,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References read\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aeff00ff26ea56c282f257e7fa03d2319_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a89bcd606b0a234679db7c5809e0560f3}\label{namespacem__stopwatch_a89bcd606b0a234679db7c5809e0560f3}} 
+\index{m\_stopwatch@{m\_stopwatch}!read\_watch\_ss@{read\_watch\_ss}}
+\index{read\_watch\_ss@{read\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{read\_watch\_ss()}{read\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::read\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{real, intent(out)}]{read\+\_\+result,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References read\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a89bcd606b0a234679db7c5809e0560f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ae67f8aee930e9258b83b5a551120e4bd}\label{namespacem__stopwatch_ae67f8aee930e9258b83b5a551120e4bd}} 
+\index{m\_stopwatch@{m\_stopwatch}!read\_watch\_sx@{read\_watch\_sx}}
+\index{read\_watch\_sx@{read\_watch\_sx}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{read\_watch\_sx()}{read\_watch\_sx()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::read\+\_\+watch\+\_\+sx (\begin{DoxyParamCaption}\item[{real, dimension(\+:), pointer}]{read\+\_\+result,  }\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and read\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ae67f8aee930e9258b83b5a551120e4bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ab6cfebb215292cc061f472aedb2dbb93}\label{namespacem__stopwatch_ab6cfebb215292cc061f472aedb2dbb93}} 
+\index{m\_stopwatch@{m\_stopwatch}!reset\_watch\_aa@{reset\_watch\_aa}}
+\index{reset\_watch\_aa@{reset\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset\_watch\_aa()}{reset\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::reset\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and reset\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ab6cfebb215292cc061f472aedb2dbb93_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacem__stopwatch_ab6cfebb215292cc061f472aedb2dbb93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a70b2f142c88aae3054e06c0884197de2}\label{namespacem__stopwatch_a70b2f142c88aae3054e06c0884197de2}} 
+\index{m\_stopwatch@{m\_stopwatch}!reset\_watch\_actual@{reset\_watch\_actual}}
+\index{reset\_watch\_actual@{reset\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset\_watch\_actual()}{reset\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::reset\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+bad\+\_\+state, err\+\_\+create, err\+\_\+handler\+\_\+watch(), err\+\_\+unk\+\_\+state, omitted, paused, running, stopped, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a70b2f142c88aae3054e06c0884197de2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a70b2f142c88aae3054e06c0884197de2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a05ff195ab84cacf71bbb2c646c562888}\label{namespacem__stopwatch_a05ff195ab84cacf71bbb2c646c562888}} 
+\index{m\_stopwatch@{m\_stopwatch}!reset\_watch\_as@{reset\_watch\_as}}
+\index{reset\_watch\_as@{reset\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset\_watch\_as()}{reset\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::reset\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and reset\+\_\+watch\+\_\+aa().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a05ff195ab84cacf71bbb2c646c562888_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aeeaefcdbbde78f813b93212704a46ce2}\label{namespacem__stopwatch_aeeaefcdbbde78f813b93212704a46ce2}} 
+\index{m\_stopwatch@{m\_stopwatch}!reset\_watch\_ga@{reset\_watch\_ga}}
+\index{reset\_watch\_ga@{reset\_watch\_ga}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset\_watch\_ga()}{reset\_watch\_ga()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::reset\+\_\+watch\+\_\+ga (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and reset\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aeeaefcdbbde78f813b93212704a46ce2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacem__stopwatch_aeeaefcdbbde78f813b93212704a46ce2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a9044e009bd733b8a19724839001c496f}\label{namespacem__stopwatch_a9044e009bd733b8a19724839001c496f}} 
+\index{m\_stopwatch@{m\_stopwatch}!reset\_watch\_gs@{reset\_watch\_gs}}
+\index{reset\_watch\_gs@{reset\_watch\_gs}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset\_watch\_gs()}{reset\_watch\_gs()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::reset\+\_\+watch\+\_\+gs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and reset\+\_\+watch\+\_\+ga().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a9044e009bd733b8a19724839001c496f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a845b765415e8f229b7f3251a96eaccc6}\label{namespacem__stopwatch_a845b765415e8f229b7f3251a96eaccc6}} 
+\index{m\_stopwatch@{m\_stopwatch}!reset\_watch\_sa@{reset\_watch\_sa}}
+\index{reset\_watch\_sa@{reset\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset\_watch\_sa()}{reset\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::reset\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References reset\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a845b765415e8f229b7f3251a96eaccc6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a547e3482f3b6f3ff40e9d2f178f73095}\label{namespacem__stopwatch_a547e3482f3b6f3ff40e9d2f178f73095}} 
+\index{m\_stopwatch@{m\_stopwatch}!reset\_watch\_ss@{reset\_watch\_ss}}
+\index{reset\_watch\_ss@{reset\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset\_watch\_ss()}{reset\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::reset\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and reset\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a547e3482f3b6f3ff40e9d2f178f73095_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ab76844fff5eb77d00bf4db5516902414}\label{namespacem__stopwatch_ab76844fff5eb77d00bf4db5516902414}} 
+\index{m\_stopwatch@{m\_stopwatch}!start\_watch\_aa@{start\_watch\_aa}}
+\index{start\_watch\_aa@{start\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{start\_watch\_aa()}{start\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::start\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and start\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ab76844fff5eb77d00bf4db5516902414_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacem__stopwatch_ab76844fff5eb77d00bf4db5516902414_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a80ef48faa6df7821de6ef06c0fa650fe}\label{namespacem__stopwatch_a80ef48faa6df7821de6ef06c0fa650fe}} 
+\index{m\_stopwatch@{m\_stopwatch}!start\_watch\_actual@{start\_watch\_actual}}
+\index{start\_watch\_actual@{start\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{start\_watch\_actual()}{start\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::start\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+bad\+\_\+state, err\+\_\+create, err\+\_\+handler\+\_\+watch(), err\+\_\+unk\+\_\+state, omitted, paused, running, stopped, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a80ef48faa6df7821de6ef06c0fa650fe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a80ef48faa6df7821de6ef06c0fa650fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a6068b7fef26a5ab12f7b92a765fe32ca}\label{namespacem__stopwatch_a6068b7fef26a5ab12f7b92a765fe32ca}} 
+\index{m\_stopwatch@{m\_stopwatch}!start\_watch\_as@{start\_watch\_as}}
+\index{start\_watch\_as@{start\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{start\_watch\_as()}{start\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::start\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and start\+\_\+watch\+\_\+aa().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a6068b7fef26a5ab12f7b92a765fe32ca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a376a3381824a3edde6f1c96663035c58}\label{namespacem__stopwatch_a376a3381824a3edde6f1c96663035c58}} 
+\index{m\_stopwatch@{m\_stopwatch}!start\_watch\_ga@{start\_watch\_ga}}
+\index{start\_watch\_ga@{start\_watch\_ga}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{start\_watch\_ga()}{start\_watch\_ga()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::start\+\_\+watch\+\_\+ga (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and start\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a376a3381824a3edde6f1c96663035c58_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacem__stopwatch_a376a3381824a3edde6f1c96663035c58_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a7c2f2f99682a7309aa136e7129bd3591}\label{namespacem__stopwatch_a7c2f2f99682a7309aa136e7129bd3591}} 
+\index{m\_stopwatch@{m\_stopwatch}!start\_watch\_gs@{start\_watch\_gs}}
+\index{start\_watch\_gs@{start\_watch\_gs}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{start\_watch\_gs()}{start\_watch\_gs()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::start\+\_\+watch\+\_\+gs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(inout)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and start\+\_\+watch\+\_\+ga().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7c2f2f99682a7309aa136e7129bd3591_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a4bd2594f2e02c3b97ff6f0556477b720}\label{namespacem__stopwatch_a4bd2594f2e02c3b97ff6f0556477b720}} 
+\index{m\_stopwatch@{m\_stopwatch}!start\_watch\_sa@{start\_watch\_sa}}
+\index{start\_watch\_sa@{start\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{start\_watch\_sa()}{start\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::start\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References start\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a4bd2594f2e02c3b97ff6f0556477b720_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a8be3c59cc9a0333ebe966ae718d1d856}\label{namespacem__stopwatch_a8be3c59cc9a0333ebe966ae718d1d856}} 
+\index{m\_stopwatch@{m\_stopwatch}!start\_watch\_ss@{start\_watch\_ss}}
+\index{start\_watch\_ss@{start\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{start\_watch\_ss()}{start\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::start\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and start\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a8be3c59cc9a0333ebe966ae718d1d856_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_afa380a4a41a9059977ffef300380d8f2}\label{namespacem__stopwatch_afa380a4a41a9059977ffef300380d8f2}} 
+\index{m\_stopwatch@{m\_stopwatch}!stop\_watch\_aa@{stop\_watch\_aa}}
+\index{stop\_watch\_aa@{stop\_watch\_aa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop\_watch\_aa()}{stop\_watch\_aa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::stop\+\_\+watch\+\_\+aa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and stop\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_afa380a4a41a9059977ffef300380d8f2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_afa380a4a41a9059977ffef300380d8f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a24cd395f8edd9999704a1ba6444267e8}\label{namespacem__stopwatch_a24cd395f8edd9999704a1ba6444267e8}} 
+\index{m\_stopwatch@{m\_stopwatch}!stop\_watch\_actual@{stop\_watch\_actual}}
+\index{stop\_watch\_actual@{stop\_watch\_actual}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop\_watch\_actual()}{stop\_watch\_actual()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::stop\+\_\+watch\+\_\+actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watch__pointer}{watch\+\_\+pointer}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+bad\+\_\+state, err\+\_\+create, err\+\_\+handler\+\_\+watch(), err\+\_\+unk\+\_\+state, omitted, paused, running, stopped, and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a24cd395f8edd9999704a1ba6444267e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a24cd395f8edd9999704a1ba6444267e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_aa9adc6b0a3fa0ccf5c542000f0b7925c}\label{namespacem__stopwatch_aa9adc6b0a3fa0ccf5c542000f0b7925c}} 
+\index{m\_stopwatch@{m\_stopwatch}!stop\_watch\_as@{stop\_watch\_as}}
+\index{stop\_watch\_as@{stop\_watch\_as}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop\_watch\_as()}{stop\_watch\_as()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::stop\+\_\+watch\+\_\+as (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), dimension(\+:), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and stop\+\_\+watch\+\_\+aa().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_aa9adc6b0a3fa0ccf5c542000f0b7925c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a4e078bf14eb68674747cdb6970444f96}\label{namespacem__stopwatch_a4e078bf14eb68674747cdb6970444f96}} 
+\index{m\_stopwatch@{m\_stopwatch}!stop\_watch\_ga@{stop\_watch\_ga}}
+\index{stop\_watch\_ga@{stop\_watch\_ga}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop\_watch\_ga()}{stop\_watch\_ga()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::stop\+\_\+watch\+\_\+ga (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References err\+\_\+alloc, err\+\_\+dealloc, err\+\_\+handler\+\_\+watch(), and stop\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a4e078bf14eb68674747cdb6970444f96_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a4e078bf14eb68674747cdb6970444f96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_afc518d20fded06c7da4a9eba0df5e41a}\label{namespacem__stopwatch_afc518d20fded06c7da4a9eba0df5e41a}} 
+\index{m\_stopwatch@{m\_stopwatch}!stop\_watch\_gs@{stop\_watch\_gs}}
+\index{stop\_watch\_gs@{stop\_watch\_gs}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop\_watch\_gs()}{stop\_watch\_gs()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::stop\+\_\+watch\+\_\+gs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchgroup}{watchgroup}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and stop\+\_\+watch\+\_\+ga().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_afc518d20fded06c7da4a9eba0df5e41a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a7486f3bc54b8bf0313f595151927a56c}\label{namespacem__stopwatch_a7486f3bc54b8bf0313f595151927a56c}} 
+\index{m\_stopwatch@{m\_stopwatch}!stop\_watch\_sa@{stop\_watch\_sa}}
+\index{stop\_watch\_sa@{stop\_watch\_sa}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop\_watch\_sa()}{stop\_watch\_sa()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::stop\+\_\+watch\+\_\+sa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stop\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a7486f3bc54b8bf0313f595151927a56c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_ad2412b50e118e372b548e3b9317f9ed4}\label{namespacem__stopwatch_ad2412b50e118e372b548e3b9317f9ed4}} 
+\index{m\_stopwatch@{m\_stopwatch}!stop\_watch\_ss@{stop\_watch\_ss}}
+\index{stop\_watch\_ss@{stop\_watch\_ss}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop\_watch\_ss()}{stop\_watch\_ss()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::stop\+\_\+watch\+\_\+ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{M__stopwatch_83m__stopwatch_8txt_a2a19577c014192ef0c2bac62d1b8c6b7}{type}} (\mbox{\hyperlink{structm__stopwatch_1_1watchtype}{watchtype}}), intent(in)}]{watch,  }\item[{character(len=$\ast$), intent(in), optional}]{clock,  }\item[{integer, intent(out), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References default\+\_\+clocks, and stop\+\_\+watch\+\_\+actual().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_ad2412b50e118e372b548e3b9317f9ed4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a7ea32569e96f968787498860fdb4d1f5}\label{namespacem__stopwatch_a7ea32569e96f968787498860fdb4d1f5}} 
+\index{m\_stopwatch@{m\_stopwatch}!system\_cpu\_time@{system\_cpu\_time}}
+\index{system\_cpu\_time@{system\_cpu\_time}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{system\_cpu\_time()}{system\_cpu\_time()}}
+{\footnotesize\ttfamily subroutine m\+\_\+stopwatch\+::system\+\_\+cpu\+\_\+time (\begin{DoxyParamCaption}\item[{real, intent(out)}]{total,  }\item[{real, intent(out)}]{user,  }\item[{real, intent(out)}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacem__stopwatch_a7ea32569e96f968787498860fdb4d1f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a38967ac58362f42dc3c5cc27acbdb24f}\label{namespacem__stopwatch_a38967ac58362f42dc3c5cc27acbdb24f}} 
+\index{m\_stopwatch@{m\_stopwatch}!which\_clocks\_a@{which\_clocks\_a}}
+\index{which\_clocks\_a@{which\_clocks\_a}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{which\_clocks\_a()}{which\_clocks\_a()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::which\+\_\+clocks\+\_\+a (\begin{DoxyParamCaption}\item[{character(len=$\ast$), dimension(\+:), intent(in)}]{clock,  }\item[{character(len=$\ast$), intent(in)}]{from,  }\item[{integer, intent(inout), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References do\+\_\+cpu, do\+\_\+sys, do\+\_\+user, do\+\_\+wall, err\+\_\+clock, err\+\_\+handler\+\_\+watch(), and system\+\_\+cpu\+\_\+time().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a38967ac58362f42dc3c5cc27acbdb24f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacem__stopwatch_a38967ac58362f42dc3c5cc27acbdb24f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacem__stopwatch_a2438913aaa1966dfa18811ff048d642b}\label{namespacem__stopwatch_a2438913aaa1966dfa18811ff048d642b}} 
+\index{m\_stopwatch@{m\_stopwatch}!which\_clocks\_s@{which\_clocks\_s}}
+\index{which\_clocks\_s@{which\_clocks\_s}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{which\_clocks\_s()}{which\_clocks\_s()}}
+{\footnotesize\ttfamily subroutine, private m\+\_\+stopwatch\+::which\+\_\+clocks\+\_\+s (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{clock,  }\item[{character(len=$\ast$), intent(in)}]{from,  }\item[{integer, intent(inout), optional}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References which\+\_\+clocks\+\_\+a().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacem__stopwatch_a2438913aaa1966dfa18811ff048d642b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacem__stopwatch_aa5f2b7700fd32f070e22af9950c47805}\label{namespacem__stopwatch_aa5f2b7700fd32f070e22af9950c47805}} 
+\index{m\_stopwatch@{m\_stopwatch}!clock\_len@{clock\_len}}
+\index{clock\_len@{clock\_len}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{clock\_len}{clock\_len}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::clock\+\_\+len = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a779dc9ad87f18ac158e8ac6cb47601e4}\label{namespacem__stopwatch_a779dc9ad87f18ac158e8ac6cb47601e4}} 
+\index{m\_stopwatch@{m\_stopwatch}!default\_clocks@{default\_clocks}}
+\index{default\_clocks@{default\_clocks}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{default\_clocks}{default\_clocks}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacem__stopwatch_aa5f2b7700fd32f070e22af9950c47805}{clock\+\_\+len}}), dimension(\+:), allocatable, private m\+\_\+stopwatch\+::default\+\_\+clocks\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a8bd2994267296dcfb8d6ca82c30e0db3}\label{namespacem__stopwatch_a8bd2994267296dcfb8d6ca82c30e0db3}} 
+\index{m\_stopwatch@{m\_stopwatch}!default\_form@{default\_form}}
+\index{default\_form@{default\_form}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{default\_form}{default\_form}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacem__stopwatch_ae96391d876b6e7b05510e339a2e68d20}{form\+\_\+len}}), save, private m\+\_\+stopwatch\+::default\+\_\+form = \char`\"{}sec\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a6856aa4d5ac6088d533a30e1087bb9c8}\label{namespacem__stopwatch_a6856aa4d5ac6088d533a30e1087bb9c8}} 
+\index{m\_stopwatch@{m\_stopwatch}!do\_cpu@{do\_cpu}}
+\index{do\_cpu@{do\_cpu}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{do\_cpu}{do\_cpu}}
+{\footnotesize\ttfamily logical, private m\+\_\+stopwatch\+::do\+\_\+cpu\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a252497fad53bb1f78a57df3a36ecc963}\label{namespacem__stopwatch_a252497fad53bb1f78a57df3a36ecc963}} 
+\index{m\_stopwatch@{m\_stopwatch}!do\_sys@{do\_sys}}
+\index{do\_sys@{do\_sys}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{do\_sys}{do\_sys}}
+{\footnotesize\ttfamily logical, private m\+\_\+stopwatch\+::do\+\_\+sys\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a29b343b01ae1c7098ed8f78872f8f9e2}\label{namespacem__stopwatch_a29b343b01ae1c7098ed8f78872f8f9e2}} 
+\index{m\_stopwatch@{m\_stopwatch}!do\_user@{do\_user}}
+\index{do\_user@{do\_user}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{do\_user}{do\_user}}
+{\footnotesize\ttfamily logical, private m\+\_\+stopwatch\+::do\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a47f4d2cbcd792fa3ad9eab7b216b06c3}\label{namespacem__stopwatch_a47f4d2cbcd792fa3ad9eab7b216b06c3}} 
+\index{m\_stopwatch@{m\_stopwatch}!do\_wall@{do\_wall}}
+\index{do\_wall@{do\_wall}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{do\_wall}{do\_wall}}
+{\footnotesize\ttfamily logical, private m\+\_\+stopwatch\+::do\+\_\+wall\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a00c8cbc3b0095ebfbcfd00e7f815171e}\label{namespacem__stopwatch_a00c8cbc3b0095ebfbcfd00e7f815171e}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_alloc@{err\_alloc}}
+\index{err\_alloc@{err\_alloc}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_alloc}{err\_alloc}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+alloc = 512\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_ad3dc0decb1422b8e2226d7f6b86a2994}\label{namespacem__stopwatch_ad3dc0decb1422b8e2226d7f6b86a2994}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_bad\_state@{err\_bad\_state}}
+\index{err\_bad\_state@{err\_bad\_state}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_bad\_state}{err\_bad\_state}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+bad\+\_\+state = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a6652c14fa8a139ea7b5a9fdd398fc5cc}\label{namespacem__stopwatch_a6652c14fa8a139ea7b5a9fdd398fc5cc}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_c2long@{err\_c2long}}
+\index{err\_c2long@{err\_c2long}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_c2long}{err\_c2long}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+c2long = 64\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a885cb53744fec08e407298ee970a4a53}\label{namespacem__stopwatch_a885cb53744fec08e407298ee970a4a53}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_clock@{err\_clock}}
+\index{err\_clock@{err\_clock}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_clock}{err\_clock}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+clock = 8\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a07067757e5248e34a59473135d6ff491}\label{namespacem__stopwatch_a07067757e5248e34a59473135d6ff491}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_create@{err\_create}}
+\index{err\_create@{err\_create}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_create}{err\_create}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+create = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a7e2fd6739245fccd789135d8a1a5b9db}\label{namespacem__stopwatch_a7e2fd6739245fccd789135d8a1a5b9db}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_dealloc@{err\_dealloc}}
+\index{err\_dealloc@{err\_dealloc}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_dealloc}{err\_dealloc}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+dealloc = 1024\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a3f65b21696fb62f2c040db063d475418}\label{namespacem__stopwatch_a3f65b21696fb62f2c040db063d475418}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_form@{err\_form}}
+\index{err\_form@{err\_form}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_form}{err\_form}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+form = 2048\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a1c604413553a07ab9a6aad2b069c5550}\label{namespacem__stopwatch_a1c604413553a07ab9a6aad2b069c5550}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_group@{err\_group}}
+\index{err\_group@{err\_group}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_group}{err\_group}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+group = 128\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a1a28d40aeec8f031d0be2736dea2dcb0}\label{namespacem__stopwatch_a1a28d40aeec8f031d0be2736dea2dcb0}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_io@{err\_io}}
+\index{err\_io@{err\_io}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_io}{err\_io}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+io = 256\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a337c5ec4e2186142778c2799953e3fe3}\label{namespacem__stopwatch_a337c5ec4e2186142778c2799953e3fe3}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_names@{err\_names}}
+\index{err\_names@{err\_names}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_names}{err\_names}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+names = 32\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_acaa885b35cdc454edb5812b95b18883d}\label{namespacem__stopwatch_acaa885b35cdc454edb5812b95b18883d}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_tmc@{err\_tmc}}
+\index{err\_tmc@{err\_tmc}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_tmc}{err\_tmc}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+tmc = 16\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_afc3962f5eafcda98b0ad803dc1b28cb9}\label{namespacem__stopwatch_afc3962f5eafcda98b0ad803dc1b28cb9}} 
+\index{m\_stopwatch@{m\_stopwatch}!err\_unk\_state@{err\_unk\_state}}
+\index{err\_unk\_state@{err\_unk\_state}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{err\_unk\_state}{err\_unk\_state}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::err\+\_\+unk\+\_\+state = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_ab704edc792bb62b6966e6d390be99a65}\label{namespacem__stopwatch_ab704edc792bb62b6966e6d390be99a65}} 
+\index{m\_stopwatch@{m\_stopwatch}!errabort@{errabort}}
+\index{errabort@{errabort}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{errabort}{errabort}}
+{\footnotesize\ttfamily logical, save, private m\+\_\+stopwatch\+::errabort = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a8092ca2d20b2b127a24fb4cb906b96be}\label{namespacem__stopwatch_a8092ca2d20b2b127a24fb4cb906b96be}} 
+\index{m\_stopwatch@{m\_stopwatch}!errprint@{errprint}}
+\index{errprint@{errprint}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{errprint}{errprint}}
+{\footnotesize\ttfamily logical, save, private m\+\_\+stopwatch\+::errprint = .true.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a1a56c421f8dda3ea8ff78ee49d1d4e11}\label{namespacem__stopwatch_a1a56c421f8dda3ea8ff78ee49d1d4e11}} 
+\index{m\_stopwatch@{m\_stopwatch}!errunit@{errunit}}
+\index{errunit@{errunit}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{errunit}{errunit}}
+{\footnotesize\ttfamily integer, save, private m\+\_\+stopwatch\+::errunit = 6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_ae96391d876b6e7b05510e339a2e68d20}\label{namespacem__stopwatch_ae96391d876b6e7b05510e339a2e68d20}} 
+\index{m\_stopwatch@{m\_stopwatch}!form\_len@{form\_len}}
+\index{form\_len@{form\_len}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{form\_len}{form\_len}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::form\+\_\+len = 12\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a3f5d3edd3b740437b0e59f64bc956402}\label{namespacem__stopwatch_a3f5d3edd3b740437b0e59f64bc956402}} 
+\index{m\_stopwatch@{m\_stopwatch}!iounit@{iounit}}
+\index{iounit@{iounit}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{iounit}{iounit}}
+{\footnotesize\ttfamily integer, save, private m\+\_\+stopwatch\+::iounit = 6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a90c3eba08ec94bd1499d3afcd621d045}\label{namespacem__stopwatch_a90c3eba08ec94bd1499d3afcd621d045}} 
+\index{m\_stopwatch@{m\_stopwatch}!name\_len@{name\_len}}
+\index{name\_len@{name\_len}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{name\_len}{name\_len}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::name\+\_\+len = 132\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_a1add492246e686a4018076984065cee0}\label{namespacem__stopwatch_a1add492246e686a4018076984065cee0}} 
+\index{m\_stopwatch@{m\_stopwatch}!omitted@{omitted}}
+\index{omitted@{omitted}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{omitted}{omitted}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::omitted = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_af9caaa877a1be74f00ecbab817ffa65c}\label{namespacem__stopwatch_af9caaa877a1be74f00ecbab817ffa65c}} 
+\index{m\_stopwatch@{m\_stopwatch}!paused@{paused}}
+\index{paused@{paused}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::paused = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_ae9aaee11cd20802153cf7e880f9d3c3e}\label{namespacem__stopwatch_ae9aaee11cd20802153cf7e880f9d3c3e}} 
+\index{m\_stopwatch@{m\_stopwatch}!running@{running}}
+\index{running@{running}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::running = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_ab81a5f83e4190cfadc0312bfb82042a8}\label{namespacem__stopwatch_ab81a5f83e4190cfadc0312bfb82042a8}} 
+\index{m\_stopwatch@{m\_stopwatch}!stopped@{stopped}}
+\index{stopped@{stopped}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{stopped}{stopped}}
+{\footnotesize\ttfamily integer, parameter, private m\+\_\+stopwatch\+::stopped = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacem__stopwatch_af92219c7ffaec61677d2eeb5004e598c}\label{namespacem__stopwatch_af92219c7ffaec61677d2eeb5004e598c}} 
+\index{m\_stopwatch@{m\_stopwatch}!sw\_version@{sw\_version}}
+\index{sw\_version@{sw\_version}!m\_stopwatch@{m\_stopwatch}}
+\doxysubsubsection{\texorpdfstring{sw\_version}{sw\_version}}
+{\footnotesize\ttfamily character(len=16), parameter, private m\+\_\+stopwatch\+::sw\+\_\+version = \char`\"{}1.\+1\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+

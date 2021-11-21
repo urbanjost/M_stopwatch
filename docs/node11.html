@@ -1,0 +1,171 @@
+<html>
+<head>
+  <title> Trouble Shooting</title>
+  <link rel="stylesheet" href="StyleSheets/man.css" type="text/css" title="man" />
+  <meta name="description" value=" Trouble Shooting" />
+  <meta name="keywords" value="user_guide" />
+  <meta name="resource-type" value="document" />
+  <meta name="distribution" value="global" />
+</head>
+<body>
+<hr />
+
+   <a name="tex2html189" href="node12.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+   <a name="tex2html187" href= "user_guide.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+   <a name="tex2html181" href="node10.html"> <img align="bottom" alt="previous" src="icons/previous_motif.gif" /> </a>
+   <a name="tex2html191" href="node1.html"> <img align="bottom" alt="contents" src= "icons/contents_motif.gif" /> </a>
+<br />
+
+  <b> Next:</b> <a name="tex2html190" href="node12.html"> Subroutine system_cpu_second</a>
+ <b> Up:</b> <a name="tex2html188" href="user_guide.html"> M_StopWatch User's Guide</a>
+ <b> Previous:</b> <a name="tex2html182" href="node10.html"> Examples</a>
+<br />
+
+<hr />
+
+  <h1> <a name="SECTION00700000000000000000"> Trouble Shooting</a> </h1>
+
+<p>
+    All M_StopWatch subroutines take an optional argument <i> err</i>
+    as the last dummy argument. This is an INTENT(OUT) integer argument
+    in which a status code is returned. The code is the sum of the values
+    listed below.
+</p>
+
+<p>
+   Errors can also be determined through printed error messages. An error
+   message will be printed to a specified I/O unit (6 by default) if
+   <i> print_errors</i>
+   is TRUE (default is TRUE; see Section <a href="node9.html#opt"> 4.4</a>).
+   The error message contains more detail about the cause of the
+   error than can be obtained from just the status code, so you should set <i>
+   print_errors</i> to TRUE if you have trouble determining the cause of the
+   error.
+</p>
+
+<p>
+   All errors are non-fatal. If <i> abort_errors</i>
+   is FALSE (default is FALSE, see Section <a href="node9.html#opt"> 4.4</a>)
+   the requested operation is ignored and execution will continue.
+</p>
+
+
+<p>
+   The relevant status codes and messages are:
+</p>
+
+  <dl compact="compact">
+
+    <dt>
+0</dt>
+
+    <dd>
+-- operation successful; no errors.</dd>
+
+    <dt> 1</dt> 
+    <dd>
+-- Watch needs to be created. This occurs when you attempt to use a watch
+   that has been destroyed. Some compilers might also generate this error
+   when you attempt to use a watch that has never been created.
+    </dd>
+
+    <dt> 2</dt>
+    <dd>
+-- Watch is in the wrong state for this operation. This occurs when you
+   attempt to start a watch that is already running, stop a watch that is not
+   running, etc.
+    </dd>
+    <dt> 4</dt> 
+
+    <dd>
+-- Watch is in an unknown state. This occurs if M_StopWatch does not
+   recognize the state (running, stopped, etc.) that the watch is
+   in. This error should not occur, and indicates an internal bug in
+   M_StopWatch.
+    </dd>
+
+    <dt> 8</dt>
+    <dd>
+-- Invalid clock type. This occurs if <i> clock</i>
+   is present and one of the specified clocks is not supported by the
+   implementation. See <b> inquiry_stopwatch</b> (Section 
+   <a href="node9.html#opt"> 4.4</a>) to determine what clocks are available.
+    </dd>
+
+    <dt> 16</dt>
+    <dd>
+-- Too many clocks specified. This occurs when the argument <i> clock</i>
+   is an array longer than four.
+    </dd>
+
+    <dt> 32</dt>
+    <dd>
+-- Number of names is not equal to number of watches. This occurs in <b>
+   create_watch</b> if the array of watch names is not of the same length as
+   the array of watches.
+    </dd>
+
+    <dt> 64</dt>
+    <dd>
+-- Character string too long. This occurs when a watch name with more
+   than 132 characters is passed into <b> create_watch</b>
+   .</dd>
+
+    <dt> 128</dt>
+    <dd>
+-- Watch not found in given group. This occurs when you attempt to remove
+   a watch from a group that it does not belong to.
+    </dd>
+
+    <dt> 256</dt>
+
+    <dd>
+-- I/O unit is not open for writing. This can occur from <b>
+   print_watch</b> or when printing an error message.</dd>
+
+    <dt> 512</dt>
+    <dd>
+-- Failed to allocate required memory. When a M_StopWatch routine
+   is called with an array or group of watches, temporary memory is
+   allocated. This error occurs if the allocate statement returns a
+   nonzero status indicating that memory could not be allocated. Avoid
+   memory leaks by always destroying watches and groups before
+   recreating them, destroying local variable watches and groups before
+   returning from a subroutine, and deallocating array results from <b>
+   read_watch</b>
+.</dd>
+
+   <dt> 1024</dt>
+    <dd>
+-- Error occurred while deallocating memory. This error occurs if the
+   deallocate statement returns a nonzero status while deallocating temporary
+   memory used for an array or group of watches. The operation is
+   performed, but be aware that other problems could develop as a result
+   of the deallocate error.
+    </dd>
+
+    <dt> 2048</dt>
+    <dd>
+-- Illegal output form. This error occurs in <b> option_stopwatch</b>
+   or <b> print_watch</b> if the given print format is not one of the
+   valid strings listed in section <a href="node9.html#opt"> 4.4</a>
+.</dd>
+
+</dl>
+<br />
+
+ <hr />
+ <a name="tex2html189" href="node12.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+ <a name="tex2html187" href= "user_guide.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+ <a name="tex2html181" href="node10.html"> <img align="bottom" alt="previous" src="icons/previous_motif.gif" /> </a>
+ <a name="tex2html191" href="node1.html"> <img align="bottom" alt="contents" src= "icons/contents_motif.gif" /> </a>
+<br />
+ <b> Next:</b> <a name="tex2html190" href="node12.html"> Subroutine system_cpu_second</a>
+ <b> Up:</b> <a name="tex2html188" href="user_guide.html"> M_StopWatch User's Guide</a>
+ <b> Previous:</b> <a name="tex2html182" href="node10.html"> Examples</a>
+<br />
+<hr />
+  <address> william.mitchell@nist.gov </address>
+</body>
+</html>
+

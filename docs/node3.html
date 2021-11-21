@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title> Quick Start</title>
+  <link rel="stylesheet" href="StyleSheets/man.css" type="text/css" title="man" />
+  <meta name="description" value=" Quick Start" />
+  <meta name="keywords" value="user_guide" />
+  <meta name="resource-type" value="document" />
+  <meta name="distribution" value="global" />
+</head>
+<body>
+<hr />
+
+  <a name="tex2html99" href="node4.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+ <a name="tex2html97" href="user_guide.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+ <a name="tex2html91" href="node2.html"> <img align="bottom" alt="previous" src="icons/previous_motif.gif" /> </a>
+ <a name="tex2html101" href="node1.html"> <img align="bottom" alt="contents" src= "icons/contents_motif.gif" /> </a>
+<br />
+
+<b>Next:</b> <a name="tex2html100" href="node4.html"> Obtaining and Compiling</a>
+<b> Up:</b> <a name="tex2html98" href="user_guide.html"> M_StopWatch User's Guide</a>
+<b> Previous:</b> <a name="tex2html92" href="node2.html"> Introduction</a>
+<br />
+
+<hr />
+
+<h1> <a name="SECTION00300000000000000000"> Quick Start</a> </h1>
+
+<p>
+   This section provides just enough information to start using the basic
+   features of M_StopWatch. If you run into trouble or want to learn about
+   the advanced features, read the rest of the M_StopWatch User's Guide
+   and the man pages.
+</p>
+
+<dl compact="compact">
+
+    <dt> 1.</dt>
+    <dd>
+      In each program unit that calls a M_StopWatch subroutine, insert the statement
+      <pre>
+      use M_stopwatch
+      </pre>
+    </dd>
+
+    <dt> 2.</dt>
+    <dd>
+      Declare one or more variables to be of type <tt> watchtype</tt>, for example
+      <pre>
+      type (watchtype) w
+      </pre>
+    </dd>
+
+    <dt> 3.</dt>
+    <dd>
+      Instrument your code as appropriate with subroutine calls:
+      <pre>
+      call create_watch(w)
+      call start_watch(w)
+      call stop_watch(w)
+      call reset_watch(w)
+      call print_watch(w)
+      call read_watch(val,w,s)
+      call destroy_watch(w)
+    </pre>
+   where <i> s</i> in <b> read_watch</b>
+   is one of the character strings 'cpu', 'user', 'sys', or 'wall',
+   depending on what clock you want to read, and <i>
+
+      val</i>
+     is a real variable (of default kind) in which the clock value is returned.
+    </dd>
+
+</dl>
+
+<p>
+<pre id='vimCodeElement'>
+   ! This program illustrates the simplest use of M_StopWatch
+   program simple
+   use M_stopwatch         ! You must have the &quot;use&quot; statement in each program unit
+   implicit none
+   type (watchtype) :: w   ! This declares w to be a watch
+   
+   call create_watch(w)    ! Watches must be created before they are used
+   call start_watch(w)     ! This starts the watch
+   
+   ! code to be timed would be located here
+   
+   call stop_watch(w)      ! This stops the watch
+   call print_watch(w)     ! This prints the measured time
+   call destroy_watch(w)   ! Always destroy the watches to free up memory
+   
+   stop
+   end program simple
+</pre>
+</p>
+
+<br />
+<hr />
+  <address> william.mitchell@nist.gov </address> 
+</body> 
+</html>
+

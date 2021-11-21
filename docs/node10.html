@@ -1,0 +1,87 @@
+<html>
+<head>
+   <title> Examples</title>
+   <link rel="stylesheet" href="StyleSheets/man.css" type="text/css" title="man" />
+   <meta name="description" value=" Examples" />
+   <meta name="keywords" value="user_guide" />
+   <meta name="resource-type" value="document" />
+   <meta name="distribution" value="global" />
+<style type="text/css">
+
+/*<![CDATA[*/
+  a.c1 {font-style: italic}
+  /*]]>
+*/
+</style>
+</head>
+<body>
+<hr />
+
+ <a name="tex2html178" href="node11.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+ <a name="tex2html176" href="user_guide.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+ <a name="tex2html170" href="node9.html"> <img align="bottom" alt="previous" src="icons/previous_motif.gif" /> </a>
+ <a name="tex2html180" href="node1.html"> <img align="bottom" alt="contents" src="icons/contents_motif.gif" /> </a>
+<br />
+
+ <b> Next:</b> <a name="tex2html179" href="node11.html"> Trouble Shooting</a>
+ <b> Up:</b> <a name="tex2html177" href="user_guide.html"> M_StopWatch User's Guide</a>
+ <b> Previous:</b> <a name="tex2html171" href="node9.html"> Options and System</a>
+<br />
+
+<hr />
+
+<h1> <a name="SECTION00600000000000000000"> Examples</a> </h1>
+
+<p>
+   The M_StopWatch distribution contains several example programs to
+   demonstrate how to use M_StopWatch , and to test the installation. These
+   programs are located in the <tt> tests</tt> directory.
+/p>
+
+<ul>
+   <li>
+      <a class="c1" name="tex2html4" href="../tests/simple.f90"> simple.f90</a>
+       -- This is a short example showing the simplest use of M_StopWatch.
+   </li>
+
+
+   <li>
+       <a class="c1" name="tex2html5" href="../tests/advanced.ff"> advanced.f90</a>
+        -- This example illustrates the use of some of the advanced features
+           of M_StopWatch.
+   </li>
+
+   <li>
+      <a class="c1" name="tex2html6" href="../tests/overhead.f90"> overhead.f90</a>
+       -- This program prints the clock precisions, and measures the amount
+          of time used by calls to M_StopWatch subroutines. As long as the clock
+          precision is much larger than the overhead of a M_StopWatch subroutine,
+          M_StopWatch should not increase the time being measured.
+   </li>
+
+   <li>
+      <a class="c1" name="tex2html7" href="../tests/testsw.f90"> testsw.f90</a>
+       -- This is a program that tests most of the functionality of M_StopWatch.
+   </li>
+
+   <li>
+      <a class="c1" name="tex2html8" href="../tests/errors.f90"> errors.f90</a>
+       -- This is a program that tests many of the error conditions detected by
+       M_StopWatch.
+   </li>
+
+
+   <li>
+      <a class="c1" name="tex2html9" href="../tests/bomb.f90"> bomb.f90</a>
+       -- This program attempts to make M_StopWatch crash by using a watch that
+       has not been created. Running this program should indicate how your
+       system handles this error condition, but there is no guarantee that
+       your compiler will handle the Fortran error consistently.
+   </li>
+
+</ul>
+<br />
+<hr />
+  <address> william.mitchell@nist.gov </address>
+</body>
+</html>

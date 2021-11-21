@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title> Operations on Watches</title>
+  <link rel="stylesheet" href="StyleSheets/man.css" type="text/css" title="man" />
+  <meta name="description" value=" Operations on Watches" />
+  <meta name="keywords" value="user_guide" />
+  <meta name="resource-type" value="document" />
+  <meta name="distribution" value="global" />
+</head>
+<body>
+<hr />
+
+   <a name="tex2html147" href="node8.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+   <a name="tex2html145" href= "node5.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+   <a name="tex2html139" href="node6.html"> <img align="bottom" alt="previous" src= "icons/previous_motif.gif" /> </a>
+   <a name="tex2html149" href="node1.html"> <img align="bottom" alt="contents" src="icons/contents_motif.gif" /> </a>
+<br />
+
+   <b> Next:</b> <a name="tex2html148" href="node8.html"> Operations on Watch</a>
+   <b> Up:</b> <a name="tex2html146" href="node5.html"> Using M_StopWatch</a>
+   <b> Previous:</b> <a name="tex2html140" href="node6.html"> WatchesClocks and</a>
+<br />
+
+<hr />
+
+<h1> <a name="SECTION00520000000000000000"> Operations on Watches</a> </h1>
+
+<p>
+   M_StopWatch is used by inserting subroutine calls into your program. These
+   subroutine calls correspond to the actions performed with a common stop
+   watch.  The basic operation of a watch involves starting it, stopping it,
+   and resetting it's value to 0.
+</p>
+
+  <ul>
+    <li> <b> start_watch</b> -- starts an idle watch, like the Start/Stop button on a stop watch</li>
+    <li> <b> stop_watch</b> -- stops a running watch, like the Start/Stop button on a stop watch</li>
+    <li> <b> reset_watch</b> -- sets the clocks on a watch to 0.0, like the Reset button on a stop watch</li>
+  </ul>
+
+<p>
+   Of course, running a stop watch is of little use unless you can see
+   what it says.
+</p>
+
+  <ul>
+    <li> <b> read_watch</b> -- returns the current clock value of a watch,
+         like looking at the display of a stop watch</li>
+    <li> <b> print_watch</b> -- prints the current clock value of
+         a watch to an output device. To push the analogy to the limit,
+         imagine a stop watch with a printer attached to it.</li>
+  </ul>
+
+<p>
+<b> read_watch</b>
+   returns the clock value in the first argument. The result variable
+   is either a scalar, a pointer to an array of rank one, or a pointer
+   to an array of rank two depending on whether <i> watch</i> and <i>
+   clock</i> are scalars or arrays. Unless it is a scalar, the result
+   variable should be deallocated after use to avoid memory leakage.
+</p>
+
+<p>
+   When measuring CPU time, it is often desirable to not include the time
+   used by certain parts of the code, such as printing or graphics. In
+   a subroutine, you might not know which of the clocks are currently
+   running, so you can not simply stop them before the I/O and start
+   them up again after the I/O. For this, M_StopWatch provides the pause
+   function.
+</p>
+
+  <ul>
+    <li> <b> pause_watch</b> -- temporarily suspend the running watches</li>
+    <li> <b> end_pause_watch</b> -- resume suspended watches</li>
+  </ul>
+<br />
+
+  <hr />
+
+  <a name="tex2html147" href="node8.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+  <a name="tex2html145" href= "node5.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+  <a name="tex2html139" href="node6.html"> <img align="bottom" alt="previous" src= "icons/previous_motif.gif" /> </a>
+  <a name="tex2html149" href="node1.html"> <img align="bottom" alt="contents" src="icons/contents_motif.gif" /> </a> <br />
+
+  <b> Next:</b> <a name="tex2html148" href="node8.html"> Operations on Watch</a>
+  <b> Up:</b> <a name="tex2html146" href="node5.html"> Using M_StopWatch</a>
+  <b> Previous:</b> <a name="tex2html140" href="node6.html"> WatchesClocks and</a>
+<br />
+
+<hr />
+  <address> william.mitchell@nist.gov </address>
+</body>
+</html>

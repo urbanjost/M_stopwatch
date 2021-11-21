@@ -1,0 +1,183 @@
+<html>
+<head>
+  <title> Watches, Clocks and Watch Groups</title>
+  <link rel="stylesheet" href="StyleSheets/man.css" type="text/css" title="man" />
+  <meta name="description" value=" Watches, Clocks and Watch Groups" />
+  <meta name="keywords" value="user_guide" />
+  <meta name="resource-type" value="document" />
+  <meta name="distribution" value="global" />
+</head>
+<body>
+<hr />
+
+  <a name="tex2html136" href="node7.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+  <a name="tex2html134" href= "node5.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+  <a name="tex2html128" href="node5.html"> <img align="bottom" alt="previous" src= "icons/previous_motif.gif" /> </a>
+  <a name="tex2html138" href="node1.html"> <img align="bottom" alt="contents" src="icons/contents_motif.gif" /> </a>
+<br />
+
+  <b> Next:</b> <a name="tex2html137" href="node7.html"> Operations on Watches</a>
+  <b> Up:</b> <a name="tex2html135" href="node5.html"> Using M_StopWatch</a>
+  <b> Previous:</b> <a name="tex2html129" href="node5.html"> Using M_StopWatch</a>
+  <br />
+
+<hr />
+
+<h1> <a name="SECTION00510000000000000000"> Watches, Clocks and Watch Groups</a> </h1>
+
+<p>
+   A watch is a variable declared to be of type <tt> watchtype</tt>
+   . It can be passed to subroutines as an actual argument or through
+   modules like any Fortran variable, but can only be operated on by
+   the M_StopWatch subroutines. Watches must be created by subroutine <b>
+   create_watch</b> before they are used. Attempting to use a watch that
+   has not been created will generate a Fortran 90 error, from attempting
+   to pass a pointer with undefined association status to the Fortran
+   intrinsic function <b> associated</b> . Watches must be destroyed when
+   no longer useful. For example, consider a local variable of type <tt>
+   watchtype</tt> in a subroutine. Since the contents of a local variable
+   are lost when the subroutine returns, the watch should be destroyed
+   before returning to the calling program. Failure to destroy watches
+   can lead to a memory leak.
+</p>
+
+  <ul>
+    <li> <b> create_watch</b> -- creates a watch</li>
+    <li> <b> destroy_watch</b> -- destroys a watch</li>
+  </ul>
+
+<p>
+   Watches can optionally be given a name (up to 132 characters) through
+   an optional argument, <i> name</i> , in <b> create_watch</b> . This
+   name is used in error messages and <b> print_watch</b> to identify
+   the watch in the printed output.
+</p>
+
+
+  <p>
+   Different applications demand different definitions of ``time''. M_StopWatch
+   supports four clocks in each watch, with each clock measuring a different
+   concept of time. All of them measure time in seconds.
+</p>
+
+  <ul>
+    <li> user -- the amount of CPU time used by the user's program</li>
+    <li> sys -- the amount of CPU time used by the system in support of the user's program</li>
+    <li> cpu -- the total CPU time, i.e., user+sys</li>
+    <li> wall -- the wall clock time, i.e., elapsed real time</li>
+  </ul>
+
+
+<p>
+   It is not required that all clocks be used. A watch can be created with
+   any combination of the four clocks. You can also specify a set of <em>
+   default clocks</em> to be used whenever the clocks are not explicitly
+   determined.
+</p>
+
+<p>
+   Since Fortran 90 does not contain an intrinsic function for CPU
+   time, the implementation of the cpu, sys and user clocks is system
+   dependent. Some implementations may support only cpu and wall, not
+   user and sys. Some implementations may support only wall. Since the
+   Fortran 90 standard requires the existence of a <b> system_clock</b>
+   subroutine, but does not require that it provide clock information,
+   it is possible that some implementations might not support wall. Clock
+   availability can be determined by <b> inquiry_stopwatch</b> (see Section
+   <a href="node9.html#opt"> 4.4</a> ). Unavailable clocks will automatically
+   be removed from the set of default clocks, but if a clock that is not
+   available is explicitly requested, a warning message will be generated.
+</p>
+
+<p>
+   M_StopWatch supports multiple watches simultaneously. Often it is useful
+   to perform the same operation on several watches. This is essential for
+   correct operation of <b> pause_watch</b> and <b> end_pause_watch</b> and
+   is convenient for procedures like <b> read_watch</b> , <b> print_watch</b>
+   and <b> reset_watch</b> . To facilitate this, M_StopWatch supports the
+   concept of <em> watch groups</em> . When calling a M_StopWatch subroutine,
+   a watch group can be specified instead of a watch. The group is referenced
+   by a variable of type <tt> watchgroup</tt> . Watch groups must be created
+   before they are used.  Attempting to use a watch group that has not
+   been created will generate a Fortran 90 error, from attempting to pass
+   a pointer with undefined association status to the Fortran intrinsic
+   function <b> associated</b> . Watch groups must be destroyed when no
+   longer useful. The watches themselves are not destroyed, only the grouping
+   of them. Failure to destroy watch groups can lead to a memory leak.
+</p>
+
+  <ul>
+    <li> <b> create_watchgroup</b> -- creates a new watch group</li>
+    <li> <b> destroy_watchgroup</b> -- destroys a watch group (but not the watches in the group)</li>
+  </ul>
+
+
+<p>
+   Most M_StopWatch subroutines take <i> watch</i> as the first dummy argument,
+   and accept several forms of <i> watch</i> . The forms are:
+</p>
+
+  <ul>
+    <li> type (watchtype) watch -- a single watch</li>
+    <li> type (watchtype) watch(:) -- an array of watches</li>
+    <li> type (watchgroup) watch -- a watch group handle</li>
+  </ul>
+
+<p>
+   In most M_StopWatch routines, an array of watches can be specified by an
+   array constructor in the calling statement, for example:
+</p>
+
+<pre>
+   type (watchtype) watch :: w1, w2, w3
+   call print_watch( (/w1,w2,w3/) )
+</pre>
+
+<p>
+   However, this can not be used in routines where <i> watch</i> has
+   intent OUT or intent INOUT, because the array constructor is actually
+   an expression, not a list of the variables. Currently this includes the
+   routines <b> create_watch</b> and <b> destroy_watch</b>.
+</p>
+
+
+<p>
+   Most M_StopWatch subroutines take <i> clock</i> as the (optional) second
+   dummy argument to determine which of the four clocks will be affected by
+   the action. <i> clock</i> can be one of the character strings 'user',
+   'sys', 'cpu', or 'wall', or can be an array of such character strings
+   to specify more than one clock. Since <i> clock</i> is always intent IN,
+   an array of clock types can be built with an array constructor. However,
+   note that Fortran 90 requires all character strings in such a construction
+   to have the same length. Thus 'sys' and 'cpu' should be padded with a
+   blank, as in:
+</p>
+
+<pre>
+   call start_watch(watch, (/'user','sys ','cpu '/) )
+</pre>
+
+<p>
+   If the optional argument <i> clock</i> is omitted, the current set
+   of default clocks is used. The set of default clocks is set with <b>
+   option_stopwatch</b> (see Section <a href="node9.html#opt"> 4.4</a> )
+   and initially consists of all available clocks.
+</p>
+
+<hr />
+
+   <a name="tex2html136" href="node7.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+   <a name="tex2html134" href= "node5.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a>
+   <a name="tex2html128" href="node5.html"> <img align="bottom" alt="previous" src= "icons/previous_motif.gif" /> </a>
+   <a name="tex2html138" href="node1.html"> <img align="bottom" alt="contents" src="icons/contents_motif.gif" /> </a>
+<br />
+
+  <b> Next:</b> <a name="tex2html137" href="node7.html"> Operations on Watches</a>
+  <b> Up:</b> <a name="tex2html135" href="node5.html"> Using M_StopWatch</a>
+  <b> Previous:</b> <a name="tex2html129" href="node5.html"> Using M_StopWatch</a>
+<br />
+
+<hr />
+  <address> william.mitchell@nist.gov </address>
+</body>
+</html>

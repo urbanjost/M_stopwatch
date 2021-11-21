@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title> Subroutine system_cpu_second</title>
+  <link rel="stylesheet" href="StyleSheets/man.css" type="text/css" title="man" />
+  <meta name="description" value=" Subroutine system_cpu_second " />
+  <meta name="keywords" value="user_guide" />
+  <meta name="resource-type" value="document" />
+  <meta name="distribution" value="global" />
+</head>
+<body>
+<hr />
+
+  <a name="tex2html200" href="node13.html"> <img align="bottom" alt="next" src="icons/next_motif.gif" /> </a>
+  <a name="tex2html198" href= "user_guide.html"> <img align="bottom" alt="up" src="icons/up_motif.gif" /> </a> 
+  <a name="tex2html192" href="node11.html"> <img align="bottom" alt="previous" src="icons/previous_motif.gif" /> </a>
+  <a name="tex2html202" href="node1.html"> <img align="bottom" alt="contents" src= "icons/contents_motif.gif" /> </a>
+<br />
+
+ <b> Next:</b> <a name="tex2html201" href="node13.html"> Acknowledgments</a>
+ <b> Up:</b> <a name="tex2html199" href="user_guide.html"> M_StopWatch User's Guide</a>
+ <b> Previous:</b> <a name="tex2html193" href="node11.html"> Trouble Shooting</a>
+<br />
+
+  <hr />
+
+  <h1> <a name="SECTION00800000000000000000"> Subroutine system_cpu_second</a> </h1>
+
+<p>
+<a name="cpusec"> </a>
+</p>
+
+
+<p>
+   Although Fortran 95 introduced the intrinsic CPU_TIME(3f) to query CPU
+   time, the intrinsic does not break down the time into user and system
+   components. Therefore, the SYSTEM_CPU_TIME(3f) routine is used from
+   module M_SYSTEM(3f).
+</p>
+
+
+<p>
+   If SYSTEM_CPU_TIME(3f) does not work on your system, you will have to
+   write your own version. The interface is
+</p>
+
+<pre>
+   subroutine system_cpu_second(cpu,user,sys)
+   real, intent(OUT) :: cpu, user, sys
+</pre>
+
+<p>
+   The first argument is for CPU time in seconds. Where available, the second
+   and third arguments should break down the CPU time into ``user'' and
+   ``system'' CPU time. If the underlying system does not provide for a
+   way of accessing the breakdown (i.e., has only CPU time), then return
+   a negative constant in <i> user</i> and <i> sys</i>
+   (for example, <tt> user=-1.; sys=-1.</tt> ). The value returned in <i> cpu</i>
+   (and <i> user</i> and <i> sys</i> where
+   available) should be a nonnegative real number such that the difference
+   between two successive calls is the amount of elapsed CPU time in
+   seconds.
+</p>
+
+<p>
+   If the system produces no CPU clock information all three values should be
+   returned as -1.0. In this case only the wall clock will be available.
+</p>
+
+<hr />
+  <address> william.mitchell@nist.gov </address> 
+</body> 
+</html>
+
