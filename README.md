@@ -71,7 +71,7 @@ or just list it as a dependency in your fpm.toml project file.
 Note that M_stopwatch.f90 is registered at the [fpm(1) registry](https://github.com/fortran-lang/fpm-registry)
 
 
-## USER DOCUMENTATION![manpages](docs/images/manpages.gif)
+## USER DOCUMENTATION
 
 [user guide](https://urbanjost.github.io/M_stopwatch/user_guide.html).
 
@@ -85,12 +85,15 @@ Note that M_stopwatch.f90 is registered at the [fpm(1) registry](https://github.
  - A single page (that uses javascript) combining all the HTML descriptions of the man-pages
    for easy searching and printing:
    [BOOK_M_stopwatch](https://urbanjost.github.io/M_stopwatch/BOOK_M_stopwatch.html).
+-->
 
  - Literal man-pages for use on GNU/Linux, Unix and CygWin platforms:
+![manpages](docs/images/manpages.gif)
+<!--
     + [manpages.zip](https://urbanjost.github.io/M_stopwatch/manpages.zip)
+-->
     + [manpages.tgz](https://urbanjost.github.io/M_stopwatch/manpages.tgz)
     + [CHANGELOG](docs/CHANGELOG.md) provides a history of significant changes
--->
 ## DEMO PROGRAMS![demos](docs/images/demo.gif)
 
 Each man-page includes a working example program. These and additional
