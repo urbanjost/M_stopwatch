@@ -67,27 +67,13 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">my_cpu_time.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dirent.h&gt;</code><br />
-<code>#include &lt;errno.h&gt;</code><br />
-<code>#include &lt;fcntl.h&gt;</code><br />
-<code>#include &lt;grp.h&gt;</code><br />
-<code>#include &lt;pwd.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;strings.h&gt;</code><br />
-<code>#include &lt;sys/stat.h&gt;</code><br />
-<code>#include &lt;sys/types.h&gt;</code><br />
-<code>#include &lt;sys/utsname.h&gt;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;utime.h&gt;</code><br />
 <code>#include &lt;sys/times.h&gt;</code><br />
 <code>#include &lt;sys/param.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -95,104 +81,19 @@ Include dependency graph for my_cpu_time.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="my__cpu__time_8c__incl.png" border="0" usemap="#_2home_2urbanjs_2venus_2V600_2github_2M__stopwatch_2src_2my__cpu__time_8c" alt=""/></div>
 <map name="_2home_2urbanjs_2venus_2V600_2github_2M__stopwatch_2src_2my__cpu__time_8c" id="_2home_2urbanjs_2venus_2V600_2github_2M__stopwatch_2src_2my__cpu__time_8c">
-<area shape="rect" title=" " alt="" coords="619,5,813,61"/>
-<area shape="rect" title=" " alt="" coords="5,109,77,136"/>
-<area shape="rect" title=" " alt="" coords="102,109,170,136"/>
-<area shape="rect" title=" " alt="" coords="194,109,257,136"/>
-<area shape="rect" title=" " alt="" coords="281,109,335,136"/>
-<area shape="rect" title=" " alt="" coords="360,109,421,136"/>
-<area shape="rect" title=" " alt="" coords="445,109,512,136"/>
-<area shape="rect" title=" " alt="" coords="537,109,607,136"/>
-<area shape="rect" title=" " alt="" coords="631,109,702,136"/>
-<area shape="rect" title=" " alt="" coords="726,109,805,136"/>
-<area shape="rect" title=" " alt="" coords="829,109,915,136"/>
-<area shape="rect" title=" " alt="" coords="939,109,1035,136"/>
-<area shape="rect" title=" " alt="" coords="1059,109,1176,136"/>
-<area shape="rect" title=" " alt="" coords="1200,109,1275,136"/>
-<area shape="rect" title=" " alt="" coords="1299,109,1371,136"/>
-<area shape="rect" title=" " alt="" coords="1395,109,1493,136"/>
-<area shape="rect" title=" " alt="" coords="1517,109,1619,136"/>
+<area shape="rect" title=" " alt="" coords="88,5,283,61"/>
+<area shape="rect" title=" " alt="" coords="5,109,72,136"/>
+<area shape="rect" title=" " alt="" coords="97,109,167,136"/>
+<area shape="rect" title=" " alt="" coords="191,109,289,136"/>
+<area shape="rect" title=" " alt="" coords="313,109,415,136"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a74e75242132eaabbc1c512488a135926"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a74e75242132eaabbc1c512488a135926">MIN</a>(x,  y)&#160;&#160;&#160;((x) &lt; (y) ? (x) : (y))</td></tr>
-<tr class="separator:a74e75242132eaabbc1c512488a135926"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aae18c27a21f7c4aed7328460a7edb34c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#aae18c27a21f7c4aed7328460a7edb34c">my_cpu_time</a> (float *c, float *u, float *s)</td></tr>
 <tr class="separator:aae18c27a21f7c4aed7328460a7edb34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa006daaf11f1e2e45a6ababaf463212b"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#aa006daaf11f1e2e45a6ababaf463212b">environ</a></td></tr>
-<tr class="separator:aa006daaf11f1e2e45a6ababaf463212b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55fec1e650e6037d352db493bea1716f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a55fec1e650e6037d352db493bea1716f">FHOST_NAME_MAX</a> =HOST_NAME_MAX</td></tr>
-<tr class="separator:a55fec1e650e6037d352db493bea1716f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e37e108fa1a58b85031aed8634f65d0"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a9e37e108fa1a58b85031aed8634f65d0">FS_IRGRP</a> =S_IRGRP</td></tr>
-<tr class="separator:a9e37e108fa1a58b85031aed8634f65d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310094a449c3371ef9cf8b0776213835"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a310094a449c3371ef9cf8b0776213835">FS_IROTH</a> =S_IROTH</td></tr>
-<tr class="separator:a310094a449c3371ef9cf8b0776213835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e3496451f60edd6c69c3802e11db67"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a03e3496451f60edd6c69c3802e11db67">FS_IRUSR</a> =S_IRUSR</td></tr>
-<tr class="separator:a03e3496451f60edd6c69c3802e11db67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e744ca243de9628a7e9651695d7a97"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#ab4e744ca243de9628a7e9651695d7a97">FS_IRWXG</a> =S_IRWXG</td></tr>
-<tr class="separator:ab4e744ca243de9628a7e9651695d7a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a612adf3e64ccb1734ab64ef6d73fa87b"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a612adf3e64ccb1734ab64ef6d73fa87b">FS_IRWXO</a> =S_IRWXO</td></tr>
-<tr class="separator:a612adf3e64ccb1734ab64ef6d73fa87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb420eb45e494ab53bbfd018c2262ff2"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#acb420eb45e494ab53bbfd018c2262ff2">FS_IRWXU</a> =S_IRWXU</td></tr>
-<tr class="separator:acb420eb45e494ab53bbfd018c2262ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a739522a271fd37727d6f266197ded32b"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a739522a271fd37727d6f266197ded32b">FS_IWGRP</a> =S_IWGRP</td></tr>
-<tr class="separator:a739522a271fd37727d6f266197ded32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed0df6f1e0108d07c0fe7880402f8c0"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a1ed0df6f1e0108d07c0fe7880402f8c0">FS_IWOTH</a> =S_IWOTH</td></tr>
-<tr class="separator:a1ed0df6f1e0108d07c0fe7880402f8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade549697e7611d5c3755b1befcd796b8"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#ade549697e7611d5c3755b1befcd796b8">FS_IWUSR</a> =S_IWUSR</td></tr>
-<tr class="separator:ade549697e7611d5c3755b1befcd796b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac01832589f29b7d987cb90be63cc3dc8"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#ac01832589f29b7d987cb90be63cc3dc8">FS_IXGRP</a> =S_IXGRP</td></tr>
-<tr class="separator:ac01832589f29b7d987cb90be63cc3dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbcf1020ef1a8f3999526f88f349fe3"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#aafbcf1020ef1a8f3999526f88f349fe3">FS_IXOTH</a> =S_IXOTH</td></tr>
-<tr class="separator:aafbcf1020ef1a8f3999526f88f349fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc949c15ea63678fc34579213919906f"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#acc949c15ea63678fc34579213919906f">FS_IXUSR</a> =S_IXUSR</td></tr>
-<tr class="separator:acc949c15ea63678fc34579213919906f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec9ddefca39a5f2bc0aa0cb9cc8a760"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a4ec9ddefca39a5f2bc0aa0cb9cc8a760">FDEFFILEMODE</a> =DEFFILEMODE</td></tr>
-<tr class="separator:a4ec9ddefca39a5f2bc0aa0cb9cc8a760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d221d0dde92c4e100c2bc959832f1df"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a2d221d0dde92c4e100c2bc959832f1df">FACCESSPERMS</a> =ACCESSPERMS</td></tr>
-<tr class="separator:a2d221d0dde92c4e100c2bc959832f1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6f268f0282f4a41c1569e80963f328"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#a8f6f268f0282f4a41c1569e80963f328">ep</a></td></tr>
-<tr class="separator:a8f6f268f0282f4a41c1569e80963f328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad45ba6068349b626136d161ff72dea21"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__cpu__time_8c.html#ad45ba6068349b626136d161ff72dea21">longest_env_variable</a> =0L</td></tr>
-<tr class="separator:ad45ba6068349b626136d161ff72dea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a74e75242132eaabbc1c512488a135926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74e75242132eaabbc1c512488a135926">&#9670;&nbsp;</a></span>MIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MIN</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((x) &lt; (y) ? (x) : (y))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aae18c27a21f7c4aed7328460a7edb34c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae18c27a21f7c4aed7328460a7edb34c">&#9670;&nbsp;</a></span>my_cpu_time()</h2>
@@ -222,259 +123,6 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="aa006daaf11f1e2e45a6ababaf463212b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa006daaf11f1e2e45a6ababaf463212b">&#9670;&nbsp;</a></span>environ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char** environ</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8f6f268f0282f4a41c1569e80963f328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f6f268f0282f4a41c1569e80963f328">&#9670;&nbsp;</a></span>ep</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char** ep</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d221d0dde92c4e100c2bc959832f1df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d221d0dde92c4e100c2bc959832f1df">&#9670;&nbsp;</a></span>FACCESSPERMS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FACCESSPERMS =ACCESSPERMS</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4ec9ddefca39a5f2bc0aa0cb9cc8a760"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ec9ddefca39a5f2bc0aa0cb9cc8a760">&#9670;&nbsp;</a></span>FDEFFILEMODE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FDEFFILEMODE =DEFFILEMODE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55fec1e650e6037d352db493bea1716f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55fec1e650e6037d352db493bea1716f">&#9670;&nbsp;</a></span>FHOST_NAME_MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FHOST_NAME_MAX =HOST_NAME_MAX</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9e37e108fa1a58b85031aed8634f65d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e37e108fa1a58b85031aed8634f65d0">&#9670;&nbsp;</a></span>FS_IRGRP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IRGRP =S_IRGRP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a310094a449c3371ef9cf8b0776213835"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a310094a449c3371ef9cf8b0776213835">&#9670;&nbsp;</a></span>FS_IROTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IROTH =S_IROTH</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a03e3496451f60edd6c69c3802e11db67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03e3496451f60edd6c69c3802e11db67">&#9670;&nbsp;</a></span>FS_IRUSR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IRUSR =S_IRUSR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab4e744ca243de9628a7e9651695d7a97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4e744ca243de9628a7e9651695d7a97">&#9670;&nbsp;</a></span>FS_IRWXG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IRWXG =S_IRWXG</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a612adf3e64ccb1734ab64ef6d73fa87b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a612adf3e64ccb1734ab64ef6d73fa87b">&#9670;&nbsp;</a></span>FS_IRWXO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IRWXO =S_IRWXO</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb420eb45e494ab53bbfd018c2262ff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb420eb45e494ab53bbfd018c2262ff2">&#9670;&nbsp;</a></span>FS_IRWXU</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IRWXU =S_IRWXU</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a739522a271fd37727d6f266197ded32b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a739522a271fd37727d6f266197ded32b">&#9670;&nbsp;</a></span>FS_IWGRP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IWGRP =S_IWGRP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1ed0df6f1e0108d07c0fe7880402f8c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ed0df6f1e0108d07c0fe7880402f8c0">&#9670;&nbsp;</a></span>FS_IWOTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IWOTH =S_IWOTH</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade549697e7611d5c3755b1befcd796b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade549697e7611d5c3755b1befcd796b8">&#9670;&nbsp;</a></span>FS_IWUSR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IWUSR =S_IWUSR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac01832589f29b7d987cb90be63cc3dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac01832589f29b7d987cb90be63cc3dc8">&#9670;&nbsp;</a></span>FS_IXGRP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IXGRP =S_IXGRP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafbcf1020ef1a8f3999526f88f349fe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafbcf1020ef1a8f3999526f88f349fe3">&#9670;&nbsp;</a></span>FS_IXOTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IXOTH =S_IXOTH</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acc949c15ea63678fc34579213919906f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc949c15ea63678fc34579213919906f">&#9670;&nbsp;</a></span>FS_IXUSR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mode_t FS_IXUSR =S_IXUSR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad45ba6068349b626136d161ff72dea21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad45ba6068349b626136d161ff72dea21">&#9670;&nbsp;</a></span>longest_env_variable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long int longest_env_variable =0L</td>
         </tr>
       </table>
 </div><div class="memdoc">
