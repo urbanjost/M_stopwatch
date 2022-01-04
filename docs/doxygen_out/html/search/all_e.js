@@ -18,5 +18,5 @@ var searchData=
   ['reset_5fwatch_5fgs_136',['reset_watch_gs',['../interfacem__stopwatch_1_1reset__watch.html#afc60d10b14a23a5ddbeded0dbbfbeb3c',1,'m_stopwatch::reset_watch::reset_watch_gs()'],['../namespacem__stopwatch.html#a9044e009bd733b8a19724839001c496f',1,'m_stopwatch::reset_watch_gs()']]],
   ['reset_5fwatch_5fsa_137',['reset_watch_sa',['../interfacem__stopwatch_1_1reset__watch.html#ab245aa35eedf147ca647f2440d3f98e8',1,'m_stopwatch::reset_watch::reset_watch_sa()'],['../namespacem__stopwatch.html#a845b765415e8f229b7f3251a96eaccc6',1,'m_stopwatch::reset_watch_sa()']]],
   ['reset_5fwatch_5fss_138',['reset_watch_ss',['../interfacem__stopwatch_1_1reset__watch.html#ad5423f320af136dc18db5bbcf410ede1',1,'m_stopwatch::reset_watch::reset_watch_ss()'],['../namespacem__stopwatch.html#a547e3482f3b6f3ff40e9d2f178f73095',1,'m_stopwatch::reset_watch_ss()']]],
-  ['running_139',['running',['../namespacem__stopwatch.html#ae9aaee11cd20802153cf7e880f9d3c3e',1,'m_stopwatch::running()'],['../M__stopwatch_83m__stopwatch_8txt.html#a0eb8d2680d46010645014344ee41bc29',1,'running():&#160;M_stopwatch.3m_stopwatch.txt']]]
+  ['running_139',['running',['../namespacem__stopwatch.html#ae9aaee11cd20802153cf7e880f9d3c3e',1,'m_stopwatch::running()'],['../M__stopwatch_83m__stopwatch_8txt.html#a35a274475ec7e2672680a331dc3b2e60',1,'running():&#160;M_stopwatch.3m_stopwatch.txt']]]
 ];
