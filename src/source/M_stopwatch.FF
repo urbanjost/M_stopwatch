@@ -79,7 +79,7 @@ $BLOCK NULL -file M_stopwatch.3m_stopwatch.txt
 ." -----------------------------------------------------------------
 
 .SH NAME
-M_stopwatch(3f)(3f) - [M_stopwatch] package for measuring cpu and wall clock
+M_stopwatch(3f)(3f) - [M_stopwatch::INTRO] package for measuring cpu and wall clock
 execution time (LICENSE:PD)
 
 .SH SYNOPSIS
