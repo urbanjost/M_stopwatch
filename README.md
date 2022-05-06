@@ -71,7 +71,8 @@ or just list it as a dependency in your fpm.toml project file.
 Note that M_stopwatch.f90 is registered at the [fpm(1) registry](https://github.com/fortran-lang/fpm-registry)
 
 
-## USER DOCUMENTATION
+## DOCUMENTATION   ![docs](docs/images/docs.gif)
+### USER
 
 [user guide](https://urbanjost.github.io/M_stopwatch/user_guide.html).
 
@@ -88,20 +89,20 @@ Note that M_stopwatch.f90 is registered at the [fpm(1) registry](https://github.
 -->
 
  - Literal man-pages for use on GNU/Linux, Unix and CygWin platforms:
-![manpages](docs/images/manpages.gif)
+![man-pages](docs/images/manpages.gif)
 <!--
     + [manpages.zip](https://urbanjost.github.io/M_stopwatch/manpages.zip)
 -->
     + [manpages.tgz](https://urbanjost.github.io/M_stopwatch/manpages.tgz)
     + [CHANGELOG](docs/CHANGELOG.md) provides a history of significant changes
-## DEMO PROGRAMS![demos](docs/images/demo.gif)
 
-Each man-page includes a working example program. These and additional
-examples are included in the example/ directory.
-
-## DEVELOPER DOCUMENTATION (__experimental__)
+### DEVELOPER (__experimental__)
 
    - The code was run through [ford(1)](https://politicalphysicist.github.io/ford-fortran-documentation.html)
      to produce a [developers' document](https://urbanjost.github.io/M_stopwatch/fpm-ford/index.html).
    - [github action status](docs/STATUS.md)
 
+## DEMO PROGRAMS![demos](docs/images/demo.gif)
+
+Each man-page includes a working example program. These and additional
+examples are included in the example/ directory.

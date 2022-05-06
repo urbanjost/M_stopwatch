@@ -46,7 +46,7 @@ end subroutine setup_watches
 
 end module globals_3
 
-module workers
+module workers_normal
 implicit none
 ! The routines being measured
 public :: subone
@@ -70,12 +70,12 @@ call end_pause_watch(ALL_GROUPS)
 
 end subroutine subone
 
-end module workers
+end module workers_normal
 
 program advanced
 use M_stopwatch
 use globals_3
-use workers
+use workers_normal
 implicit none
 
 integer :: i, nmult                                      ! loop counter, number of multiplies to do

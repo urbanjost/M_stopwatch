@@ -4,6 +4,10 @@ license = "license"
 author = "John S. Urban"
 maintainer = "urbanjost@comcast.com"
 copyright = "Copyright 2021, John S. Urban"
+description = "timing routines using stopwatches"
+categories = ["timing", "fortran"]
+keywords = ["timing", "fortran", "fpm" ]
+homepage = "https://github.com/urbanjost"
 [build]
 auto-executables = true
 auto-tests = true
