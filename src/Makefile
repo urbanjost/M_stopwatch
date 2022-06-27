@@ -25,9 +25,9 @@ PROG = ${PROGFILES:.f90=}
 
 CPROG = ${CPROGFILES:.c=}
 
-SRCS =  my_cpu_time.c M_stopwatch.f90 
+SRCS =  my_stopwatch_cpu_time.c M_stopwatch.f90 
 
-OBJS =  my_cpu_time.o M_stopwatch.o 
+OBJS =  my_stopwatch_cpu_time.o M_stopwatch.o 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # platform-specific values you will probably change
 # 

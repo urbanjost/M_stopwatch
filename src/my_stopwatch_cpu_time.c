@@ -17,7 +17,7 @@
 #include <sys/times.h>
 #include <sys/param.h>
 
-void my_cpu_time( float *c, float *u, float *s ){
+void my_stopwatch_cpu_time( float *c, float *u, float *s ){
    clock_t t;
    struct tms mytime;
 
