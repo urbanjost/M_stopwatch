@@ -60,7 +60,7 @@ write(unit=*,fmt=*)
 call inquiry_stopwatch(cpu_prec=cpu, wall_prec=wall)
 
 write(unit=*,fmt=*) " This is the smallest time interval that the cpu and wall clocks can"
-write(unit=*,fmt=*) " measure, in seconds.  A value of 0. indicates that that clock is not"
+write(unit=*,fmt=*) " measure, in seconds.  A value of 0. indicates that clock is not"
 write(unit=*,fmt=*) " available."
 write(unit=*,fmt=*)
 write(unit=*,fmt=*) " CPU  clock precision = ",cpu

@@ -8,8 +8,8 @@
 
    M_StopWatch is a Fortran 90 module for measuring execution time of
    program segments. M_StopWatch is designed to be a portable, easy-to-use 
-   means of measuring execution time. It supports the wall clock,
-   CPU clock, and a breakdown of the CPU clock into user and system
+   means of measuring execution time. It supports wall clock,
+   CPU time, and a breakdown of the CPU clock into user and system
    times. It returns all times in seconds. It provides a simple means
    of determining which clocks are available, and the precision of
    those clocks.

@@ -94,10 +94,10 @@ ship:
 	: make easily distributed archive files of manpages
 	mkdir -p ../docs
 	cd ../man/man3;\
-	   gzip *.3M_stopwatch;\
+	   gzip *.3m_stopwatch;\
 	   zip -r ../../docs/manpages.zip *gz;\
 	   tar cvfz ../../docs/manpages.tgz *gz;\
-	   gunzip *.3M_stopwatch.gz
+	   gunzip *.3m_stopwatch.gz
 
 .PHONY: run
 run: $(PROG)
