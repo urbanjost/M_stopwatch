@@ -1,4 +1,4 @@
-![string](docs/images/alphabet.gif)
+![string](docs/images/M_stopwatch.gif)
 # M_stopwatch.f90 and associated files
 
 ## NAME
