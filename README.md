@@ -1,10 +1,10 @@
 ![string](docs/images/M_stopwatch.gif)
 # M_stopwatch.f90 and associated files
 
-## NAME
+## Name
   M_stopwatch - package for measuring cpu and wall clock execution time (LICENSE:PD) based on [StopWatch](https://math.nist.gov/StopWatch)
 
-## DESCRIPTION
+## Description
 
   M_StopWatch is a Fortran 90 module for measuring execution time of
   program segments. M_StopWatch is designed to be a portable, easy-to-use
@@ -19,7 +19,7 @@
   M_StopWatch supports multiple watches, and provides the concept of watch
   groups to allow functions to operate on multiple watches simultaneously.
 
-## DOWNLOAD and BUILD with make(1) ![gmake](docs/images/gnu.gif)
+## Download and Build with Make(1) ![gmake](docs/images/gnu.gif)
   Just download the github repository, enter the src/ directory and run make:
 ```text
      git clone https://github.com/urbanjost/M_stopwatch.git
@@ -47,7 +47,7 @@
   all the example programs from the document pages in the example/
   sub-directory and run the unit tests.
 
-## DOWNLOAD AND BUILD WITH FPM(1) ![fpm](docs/images/fpm_logo.gif)
+## Download and Build with FPM(1) ![fpm](docs/images/fpm_logo.gif)
 
   Alternatively, download the github repository and build it with
   fpm ( as described at [Fortran Package Manager](https://github.com/fortran-lang/fpm) )
@@ -64,8 +64,8 @@
 ```
   Note that M_stopwatch.f90 is registered at the [fpm(1) registry](https://github.com/fortran-lang/fpm-registry)
 
-## DOCUMENTATION   ![docs](docs/images/docs.gif)
-### USER
+## Documentation   ![docs](docs/images/docs.gif)
+### User
 
 [user guide](https://urbanjost.github.io/M_stopwatch/user_guide.html).
 
@@ -87,13 +87,13 @@
 
  - [CHANGELOG](docs/CHANGELOG.md) provides a history of significant changes
 
-### DEVELOPER (__experimental__)
+### Developer (__experimental__)
 
  - The code was run through [ford(1)](https://politicalphysicist.github.io/ford-fortran-documentation.html)
    to produce a [developers' document](https://urbanjost.github.io/M_stopwatch/fpm-ford/index.html).
  - [github action status](docs/STATUS.md)
 
-## DEMO PROGRAMS![demos](docs/images/demo.gif)
+## Demo Programs![demos](docs/images/demo.gif)
 
 Each man-page includes a working example program. These and additional
-examples are included in the example/ directory.
+examples are included in the [example/](example/) directory.
