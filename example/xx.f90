@@ -2,6 +2,8 @@ program testit
 use,intrinsic :: iso_fortran_env, only : int8, int16, int32, int64
 use M_stopwatch, only : tic, toc
 integer(kind=int64) :: clicks(2)
+real :: a
+integer :: i
 a=0.0
       call tic()
       call system_clock(clicks(1))

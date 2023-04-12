@@ -1,4 +1,4 @@
-name: docs
+name: FORD docs deployed to gh-pages
 
 on: [push, pull_request]
 
@@ -19,5 +19,5 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: fpm-ford
+        FOLDER: docs/fpm-ford
         CLEAN: true
