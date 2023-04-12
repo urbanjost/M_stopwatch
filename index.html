@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="timing procedures">
+    
+    <meta name="author" content="John S. Urban" >
+    <link rel="icon" href="./favicon.png">
+
+    <title> M_stopwatch </title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/pygments.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/local.css" rel="stylesheet">
+    
+    <link  href="./tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="./js/jquery-2.1.3.min.js"></script>
+    <script src="./js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">M_stopwatch </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="./sourcefile/m_stopwatch.f90.html">Source File</a></li>
+        
+        
+        
+            <li><a href="./lists/modules.html">Modules</a></li>
+        
+            
+                                
+            <li><a href="./lists/procedures.html">Procedures</a></li>
+        
+               
+            <li><a href="./lists/types.html">Derived Types</a></li>
+        
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="./sourcefile/m_stopwatch.f90.html">Source File</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="./lists/modules.html">Modules</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="./lists/procedures.html">Procedures</a></li>
+
+                             
+<li class="visible-xs hidden-sm visible-lg"><a href="./lists/types.html">Derived Types</a></li>
+
+
+          </ul>
+        
+        <form action="./search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <p>timing procedures</p>
+        	 
+	<p> Find us on&hellip;</p>
+        <p>
+        	 
+          <a class="btn btn-lg btn-primary" href="https://github.com/urbanjost/M_stopwatch" role="button">GitHub</a>
+			 
+			 
+			 
+			 
+	         
+			 
+        </p>
+      </div>
+
+      <div class="row" id='text'>
+		  
+        <div class="col-md-8">
+		  
+          <h1>M_stopwatch</h1>
+          <!--
+author_pic:
+twitter:
+website:
+-->
+<p><img alt="string" src="docs/images/alphabet.gif"></p>
+<h1 id="m_stopwatchf90-and-associated-files">M_stopwatch.f90 and associated files</h1>
+<h2 id="name">NAME</h2>
+<p>M_stopwatch - package for measuring cpu and wall clock execution time (LICENSE:PD) based on <a href="https://math.nist.gov/StopWatch">StopWatch</a></p>
+<h2 id="description">DESCRIPTION</h2>
+<p>M_StopWatch is a Fortran 90 module for measuring execution time of
+   program segments. M_StopWatch is designed to be a portable, easy-to-use 
+   means of measuring execution time. It supports the wall clock,
+   CPU clock, and a breakdown of the CPU clock into user and system
+   times. It returns all times in seconds. It provides a simple means
+   of determining which clocks are available, and the precision of
+   those clocks.</p>
+<p>M_StopWatch is used by instrumenting your code with subroutine calls
+   that mimic the operation of a stop watch. The primary routines are
+   start_watch, stop_watch, reset_watch, read_watch, and print_watch.
+   M_StopWatch supports multiple watches, and provides the concept
+   of watch groups to allow functions to operate on multiple watches
+   simultaneously.</p>
+<h2 id="download-and-build-with-make1">DOWNLOAD and BUILD with make(1) <img alt="gmake" src="docs/images/gnu.gif"></h2>
+<p>Just download the github repository, enter the src/ directory and run make:</p>
+<div class="codehilite"><pre><span></span><code> <span class="nv">git</span> <span class="nv">clone</span> <span class="nv">https</span>:<span class="o">//</span><span class="nv">github</span>.<span class="nv">com</span><span class="o">/</span><span class="nv">urbanjost</span><span class="o">/</span><span class="nv">M_stopwatch</span>.<span class="nv">git</span>
+ <span class="nv">cd</span> <span class="nv">M_stopwatch</span><span class="o">/</span><span class="nv">src</span>
+ # <span class="nv">change</span> <span class="nv">Makefile</span> <span class="k">if</span> <span class="nv">not</span> <span class="nv">using</span> <span class="nv">one</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">listed</span> <span class="nv">compilers</span>
+
+ # <span class="k">for</span> <span class="nv">gfortran</span>
+ <span class="nv">make</span> <span class="nv">clean</span>
+ <span class="nv">make</span> <span class="nv">F90</span><span class="o">=</span><span class="nv">gfortran</span> <span class="nv">gfortran</span>
+
+ # <span class="k">for</span> <span class="nv">ifort</span>
+ <span class="nv">make</span> <span class="nv">clean</span>
+ <span class="nv">make</span> <span class="nv">F90</span><span class="o">=</span><span class="nv">ifort</span> <span class="nv">ifort</span>
+
+ # <span class="k">for</span> <span class="nv">nvfortran</span>
+ <span class="nv">make</span> <span class="nv">clean</span>
+ <span class="nv">make</span> <span class="nv">F90</span><span class="o">=</span><span class="nv">nvfortran</span> <span class="nv">nvfortran</span>
+
+ # <span class="nv">optionally</span>
+ <span class="nv">make</span> <span class="nv">test</span> # <span class="nv">run</span> <span class="nv">the</span> <span class="nv">unit</span> <span class="nv">tests</span>
+ <span class="nv">make</span> <span class="nv">run</span>  # <span class="nv">run</span> <span class="nv">all</span> <span class="nv">the</span> <span class="nv">demo</span> <span class="nv">programs</span> <span class="nv">from</span> <span class="nv">the</span> <span class="nv">man</span><span class="o">-</span><span class="nv">pages</span>
+ <span class="nv">make</span> <span class="nv">help</span> # <span class="nv">see</span> <span class="nv">other</span> <span class="nv">developer</span> <span class="nv">options</span>
+</code></pre></div>
+
+<p>This will compile the M_stopwatch(3f) module and optionally build all the
+example programs from the document pages in the example/ sub-directory
+and run the unit tests.</p>
+<h2 id="download-and-build-with-fpm1">DOWNLOAD AND BUILD WITH FPM(1) <img alt="fpm" src="docs/images/fpm_logo.gif"></h2>
+<p>Alternatively, download the github repository and build it with
+fpm ( as described at <a href="https://github.com/fortran-lang/fpm">Fortran Package Manager</a> )</p>
+<div class="codehilite"><pre><span></span><code>     git clone https://github.com/urbanjost/M_stopwatch.git
+     <span class="nb">cd</span> M_stopwatch
+     fpm build
+     fpm <span class="nb">test</span>  <span class="c1"># run unit tests</span>
+</code></pre></div>
+
+<p>or just list it as a dependency in your fpm.toml project file.</p>
+<div class="codehilite"><pre><span></span><code>     <span class="k">[dependencies]</span>
+     <span class="n">M_stopwatch</span>        <span class="o">=</span> <span class="p">{</span> <span class="n">git</span> <span class="o">=</span> <span class="s">&quot;https://github.com/urbanjost/M_stopwatch.git&quot;</span> <span class="p">,</span><span class="n">tag</span><span class="o">=</span><span class="s">&quot;v1.0.1&quot;</span><span class="p">}</span>
+</code></pre></div>
+
+<p>Note that M_stopwatch.f90 is registered at the <a href="https://github.com/fortran-lang/fpm-registry">fpm(1) registry</a></p>
+<h2 id="documentation">DOCUMENTATION   <img alt="docs" src="docs/images/docs.gif"></h2>
+<h3 id="user">USER</h3>
+<p><a href="https://urbanjost.github.io/M_stopwatch/user_guide.html">user guide</a>.</p>
+<!--
+   There are HTML documents for each
+   subprogram in the style of man-pages:
+
+ - An [index](https://urbanjost.github.io/M_stopwatch/man3.html) to the HTML versions
+   of the man-pages.
+
+ - A single page (that uses javascript) combining all the HTML descriptions of the man-pages
+   for easy searching and printing:
+   [BOOK_M_stopwatch](https://urbanjost.github.io/M_stopwatch/BOOK_M_stopwatch.html).
+-->
+
+<ul>
+<li>Literal man-pages for use on GNU/Linux, Unix and CygWin platforms:
+<img alt="man-pages" src="docs/images/manpages.gif"></li>
+</ul>
+<!--
+    + [manpages.zip](https://urbanjost.github.io/M_stopwatch/manpages.zip)
+-->
+<div class="codehilite"><pre><span></span><code><span class="o">+</span><span class="w"> </span><span class="o">[</span><span class="n">manpages.tgz</span><span class="o">]</span><span class="p">(</span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">urbanjost</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="o">/</span><span class="n">M_stopwatch</span><span class="o">/</span><span class="n">manpages</span><span class="p">.</span><span class="n">tgz</span><span class="p">)</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="o">[</span><span class="n">CHANGELOG</span><span class="o">]</span><span class="p">(</span><span class="n">docs</span><span class="o">/</span><span class="n">CHANGELOG</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="w"> </span><span class="n">provides</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">history</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">significant</span><span class="w"> </span><span class="n">changes</span><span class="w"></span>
+</code></pre></div>
+
+<h3 id="developer-experimental">DEVELOPER (<strong>experimental</strong>)</h3>
+<ul>
+<li>The code was run through <a href="https://politicalphysicist.github.io/ford-fortran-documentation.html">ford(1)</a>
+     to produce a <a href="https://urbanjost.github.io/M_stopwatch/fpm-ford/index.html">developers&rsquo; document</a>.</li>
+<li><a href="docs/STATUS.md">github action status</a></li>
+</ul>
+<h2 id="demo-programs">DEMO PROGRAMS<img alt="demos" src="docs/images/demo.gif"></h2>
+<p>Each man-page includes a working example program. These and additional
+examples are included in the example/ directory.</p>
+<hr>
+        </div>
+		  
+        <div class="col-md-4">
+	  <div class="well">
+          <h2>Developer Info</h2>
+          <h4>John S. Urban</h4>
+          
+          
+			   
+            <div class="text-center"><div class="btn-group" role="group">
+              
+              
+              
+              <a class="btn btn-lg btn-primary" href="https://github.com/urbanjost/M_stopwatch"><i class="fa fa-github fa-lg"></i></a>
+				  
+				  
+              
+              
+              
+              
+            </div></div>
+            
+       </div>
+       </div>
+       
+      </div>
+      
+      
+      
+      
+		
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">
+              <h3>Source Files</h3>
+              <ul>
+                
+                  
+                    <li><a href='./sourcefile/m_stopwatch.f90.html'>M_stopwatch.f90</a></li>
+                  
+                
+              </ul>
+          </div>
+          
+		  <div class="col-xs-6 col-sm-3">
+              <h3>Modules</h3>
+              <ul>
+                
+                  
+                    <li><a href='./module/m_stopwatch.html'>M_stopwatch</a></li>
+                  
+                
+              </ul>
+          </div>
+          
+          
+		  <div class="col-xs-6 col-sm-3">
+              <h3>Procedures</h3>
+              <ul>
+                
+                  
+                    <li><a href='./interface/create_watch.html'>create_watch</a></li>
+                  
+                
+                  
+                    <li><a href='./interface/create_watchgroup.html'>create_watchgroup</a></li>
+                  
+                
+                  
+                    <li><a href='./interface/destroy_watch.html'>destroy_watch</a></li>
+                  
+                
+                  
+                    <li><a href='./proc/destroy_watchgroup.html'>destroy_watchgroup</a></li>
+                  
+                
+                  
+                    <li><a href='./interface/end_pause_watch.html'>end_pause_watch</a></li>
+                  
+                
+                  
+                    <li><a href='./proc/inquiry_stopwatch.html'>inquiry_stopwatch</a></li>
+                  
+                
+                  
+                    <li><a href='./interface/join_watchgroup.html'>join_watchgroup</a></li>
+                  
+                
+                  
+                    <li><a href='./interface/leave_watchgroup.html'>leave_watchgroup</a></li>
+                  
+                
+                  
+                    <li><a href='./interface/option_stopwatch.html'>option_stopwatch</a></li>
+                  
+                
+                  
+                    <li><a href='./interface/pause_watch.html'>pause_watch</a></li>
+                  
+                
+                  
+                    <li><a href="./lists/procedures.html"><em>All procedures&hellip;</em></a></li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+          </div>
+          
+          
+		  <div class="col-xs-6 col-sm-3">
+              <h3>Derived Types</h3>
+              <ul>
+                
+                  
+                    <li><a href='./type/watchgroup.html'>watchgroup</a></li>
+                  
+                
+                  
+                    <li><a href='./type/watchtype.html'>watchtype</a></li>
+                  
+                
+              </ul>
+          </div>
+          
+      </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2022 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+             on 2022-06-27 07:56  
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> M_stopwatch was developed by John S. Urban</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="./tipuesearch/tipuesearch_content.js"></script>
+    <script src="./tipuesearch/tipuesearch_set.js"></script>
+    <script src="./tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>
