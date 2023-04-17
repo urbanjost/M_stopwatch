@@ -10,15 +10,15 @@
 ! total time for each phase; the total time.  There will be printed output
 ! that should not be included in the measured time.
 
-module globals_1
+module M_stopwatch__globals_1
 use M_stopwatch
 implicit none
 private
 public :: watchgroup
 type (watchgroup), public :: g3 ! the group with all the watches; global var
-end module globals_1
+end module M_stopwatch__globals_1
 
-module workers_1
+module M_stopwatch__workers_1
 implicit none
 ! The routines being measured
 
@@ -28,7 +28,7 @@ contains
 
 subroutine phases(n)
 use M_stopwatch
-use globals_1
+use M_stopwatch__globals_1
 
 ! This subroutine performs n multiplications, just to give us something
 ! to time.  The multiplications are performed in another subroutine so that
@@ -60,12 +60,12 @@ real, intent(out) :: z
 z=x*y
 end subroutine mult
 
-end module workers_1
+end module M_stopwatch__workers_1
 
 program advanced
 use M_stopwatch
-use globals_1
-use workers_1
+use M_stopwatch__globals_1
+use M_stopwatch__workers_1
 implicit none
 
 ! The watches are: w(1) time for phase 1 this time through the loop

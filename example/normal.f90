@@ -7,7 +7,7 @@
 !  
 !  There will be printed output that should not be included in the measured time.
 !
-module globals_3
+module M_stopwatch__globals_3
 use M_stopwatch
 implicit none
 private
@@ -24,7 +24,7 @@ type (watchtype), public, dimension(5) :: w
 !                  w(5) total time
 ! The watch groups are: GROUPS_FOR_ONE phase 1 times w(1) and w(3)
 !                       GROUPS_FOR_TWO phase 2 times w(2) and w(4)
-!                       ALL_GROUPS all of them (declared in module globals_3)
+!                       ALL_GROUPS all of them (declared in module M_stopwatch__globals_3)
 type (watchgroup), public :: GROUPS_FOR_ONE, GROUPS_FOR_TWO
 contains
 
@@ -44,9 +44,9 @@ subroutine setup_watches
 
 end subroutine setup_watches
 
-end module globals_3
+end module M_stopwatch__globals_3
 
-module workers_normal
+module M_stopwatch__workers_normal
 implicit none
 ! The routines being measured
 public :: subone
@@ -54,7 +54,7 @@ contains
 
 subroutine subone(n,c) ! just to give us something to time.  
 use M_stopwatch
-use globals_3
+use M_stopwatch__globals_3
 integer, intent(in) :: n
 real, intent(out)   :: c
 integer :: i
@@ -70,12 +70,12 @@ call end_pause_watch(ALL_GROUPS)
 
 end subroutine subone
 
-end module workers_normal
+end module M_stopwatch__workers_normal
 
 program advanced
 use M_stopwatch
-use globals_3
-use workers_normal
+use M_stopwatch__globals_3
+use M_stopwatch__workers_normal
 implicit none
 
 integer :: i, nmult                                      ! loop counter, number of multiplies to do

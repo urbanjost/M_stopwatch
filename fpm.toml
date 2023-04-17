@@ -8,9 +8,12 @@ description = "timing routines using stopwatches"
 categories = ["timing", "fortran"]
 keywords = ["timing", "fortran", "fpm" ]
 homepage = "https://github.com/urbanjost"
+
 [build]
 auto-executables = true
 auto-tests = true
 auto-examples = true
+#module-naming = true
+
 [install]
 library = true

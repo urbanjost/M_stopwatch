@@ -8,7 +8,7 @@
        !  There will be printed output that should not be included in the
        !  measured time.
        !
-       module globals
+       module M_stopwatch__globals
        use M_stopwatch
        implicit none
        private
@@ -26,7 +26,8 @@
        !                  w(5) total time
        ! The watch groups are: GROUPS_FOR_ONE phase 1 times w(1) and w(3)
        !                       GROUPS_FOR_TWO phase 2 times w(2) and w(4)
-       !                       ALL_GROUPS all of them (declared in module globals)
+       !                       ALL_GROUPS all of them
+       !                       (declared in module M_stopwatch__globals)
        type (watchgroup), public :: GROUPS_FOR_ONE, GROUPS_FOR_TWO
        contains
        subroutine setup_watches
@@ -46,9 +47,10 @@
 
        end subroutine setup_watches
 
-       end module globals
 
-       module workers
+       end module M_stopwatch__globals
+
+       module M_stopwatch__workers
        implicit none
        ! The routines being measured
        public :: subone
@@ -56,7 +58,7 @@
 
        subroutine subone(n,c) ! just to give us something to time.
        use M_stopwatch
-       use globals
+       use M_stopwatch__globals
        integer, intent(in) :: n
        real, intent(out)   :: c
        integer :: i
@@ -72,12 +74,12 @@
 
        end subroutine subone
 
-       end module workers
+       end module M_stopwatch__workers
 
        program demo_M_stopwatch
        use M_stopwatch
-       use globals
-       use workers
+       use M_stopwatch__globals
+       use M_stopwatch__workers
        implicit none
 
        integer :: i, nmult                ! loop counter, number of multiplies to do

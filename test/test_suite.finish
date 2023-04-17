@@ -1,6 +1,6 @@
 subroutine test_suite_M_stopwatch()
-use M_verify, only : unit_check_start,unit_check,unit_check_done,unit_check_good,unit_check_bad,unit_check_msg
-use M_verify, only : unit_check_level
+use M_framework__verify, only : unit_check_start,unit_check,unit_check_done,unit_check_good,unit_check_bad,unit_check_msg
+use M_framework__verify, only : unit_check_level
 
 !! setup
    call test_create_watch_aa()
