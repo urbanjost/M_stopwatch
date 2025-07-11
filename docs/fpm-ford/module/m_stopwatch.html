@@ -1,0 +1,5162 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="timing procedures">
+    <meta name="author" content="John S. Urban" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>M_stopwatch &ndash; M_stopwatch</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
+    <link href="../css/local.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">M_stopwatch </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../sourcefile/m_stopwatch.f90.html">Source File</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>M_stopwatch
+      <small>Module</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+                 title="100.0% of total for modules and submodules.">2164 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/M_stopwatch.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/m_stopwatch.f90.html'>M_stopwatch.f90</a></li>
+            <li class="breadcrumb-item active" aria-current="page">M_stopwatch</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#inters-0"
+         aria-expanded="false" aria-controls="inters-0">
+         <h4 class="card-header bg-primary text-white">Interfaces</h4>
+      </a>
+      <div id="inters-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-create_watch">create_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-create_watchgroup">create_watchgroup</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-destroy_watch">destroy_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-end_pause_watch">end_pause_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-join_watchgroup">join_watchgroup</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-leave_watchgroup">leave_watchgroup</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-option_stopwatch">option_stopwatch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-pause_watch">pause_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-print_watch">print_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-read_watch">read_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-reset_watch">reset_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-start_watch">start_watch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#interface-stop_watch">stop_watch</a>
+        </div>
+      </div>
+    </div>
+
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#types-0"
+         aria-expanded="false" aria-controls="types-0">
+         <h4 class="card-header bg-primary text-white">Derived Types</h4>
+      </a>
+      <div id="types-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/m_stopwatch.html#type-watchgroup">watchgroup</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#type-watchtype">watchtype</a>
+        </div>
+      </div>
+    </div>
+
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#subs-0"
+         aria-expanded="false" aria-controls="subs-0">
+         <h4 class="card-header bg-primary text-white">Subroutines</h4>
+      </a>
+      <div id="subs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/m_stopwatch.html#proc-destroy_watchgroup">destroy_watchgroup</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#proc-inquiry_stopwatch">inquiry_stopwatch</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#proc-tic">tic</a>
+            <a class="list-group-item" href="../module/m_stopwatch.html#proc-toc">toc</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      <div class="codehilite"><pre><span></span><code>                 M_StopWatch Version 1.1
+</code></pre></div>
+
+<p>M_StopWatch is a Fortran 90 module for portable, easy-to-use
+   measurement of execution time.  It supports four clocks</p>
+<div class="codehilite"><pre><span></span><code>  o wall clock
+  o CPU clock
+  o user CPU clock
+  o system CPU clock
+</code></pre></div>
+
+<p>and returns all times in seconds.</p>
+<p>It provides a simple means of determining which clocks are available,
+   and the precision of those clocks.</p>
+<p>M_StopWatch is used by instrumenting your code with subroutine calls
+   that mimic the operation of a stop watch.  M_StopWatch supports multiple
+   watches, and provides the concept of watch groups to allow functions
+   to operate on multiple watches simultaneously.</p>
+<p>For further information on using M_StopWatch, see the User Guide or
+   man pages.</p>
+<p>The M_StopWatch software and documentation have been produced as part
+   of work done by the U.S. Government, and are not subject to copyright
+   in the United States.</p>
+<p>William F. Mitchell
+   mitchell@cam.nist.gov
+   National Institute of Standards and Technology
+   December 2, 1996</p>
+<p>The research software provided on this web site (“software”) is provided by
+ NIST as a public service. You may use, copy and distribute copies of the
+ software in any medium, provided that you keep intact this entire notice. You
+ may improve, modify and create derivative works of the software or any portion
+ of the software, and you may copy and distribute such modifications or works.
+ Modified works should carry a notice stating that you changed the software and
+ should note the date and nature of any such change. Please explicitly
+ acknowledge the National Institute of Standards and Technology as the source of
+ the software.</p>
+<p>The software is expressly provided “AS IS.” NIST MAKES NO WARRANTY OF ANY KIND,</p>
+<h2 id="express-implied-in-fact-or-arising-by-operation-of-law-including-without">EXPRESS, IMPLIED, IN FACT OR ARISING BY OPERATION OF LAW, INCLUDING, WITHOUT</h2>
+<h2 id="limitation-the-implied-warranty-of-merchantability-fitness-for-a-particular">LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR</h2>
+<h2 id="purpose-non-infringement-and-data-accuracy-nist-neither-represents-nor">PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST NEITHER REPRESENTS NOR</h2>
+<h2 id="warrants-that-the-operation-of-the-software-will-be-uninterrupted-or-error-free">WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE,</h2>
+<h2 id="or-that-any-defects-will-be-corrected-nist-does-not-warrant-or-make-any">OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES NOT WARRANT OR MAKE ANY</h2>
+<h2 id="representations-regarding-the-use-of-the-software-or-the-results-thereof">REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR THE RESULTS THEREOF,</h2>
+<h2 id="including-but-not-limited-to-the-correctness-accuracy-reliability-or">INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, RELIABILITY, OR</h2>
+<h2 id="usefulness-of-the-software">USEFULNESS OF THE SOFTWARE.</h2>
+<p>You are solely responsible for determining the appropriateness of using and
+ distributing the software and you assume all risks associated with its use,
+ including but not limited to the risks and costs of program errors, compliance
+ with applicable laws, damage to or loss of data, programs or equipment, and the
+ unavailability or interruption of operation. This software is not intended to be
+ used in any situation where a failure could cause risk of injury or damage to
+ property. The software was developed by NIST employees. NIST employee
+ contributions are not subject to copyright protection within the United States.</p>
+<br>          <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href='http://fortranwiki.org/fortran/show/iso_c_binding'>iso_c_binding</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+      
+      <br>
+
+
+
+
+        <section>
+          <h2>Interfaces</h2>
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-create_watch"></span>
+      <h3>public        interface <a href='../interface/create_watch.html'>create_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine create_watch_aa(watch, clock, name, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~2"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~2"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-name~3"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional,</td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>name</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~2"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine create_watch_as(watch, clock, name, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~3"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~3"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-name~4"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional,</td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>name</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~3"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine create_watch_sa(watch, clock, name, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~4"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~4"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-name~5"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>name</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~4"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine create_watch_ss(watch, clock, name, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~5"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~5"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-name~6"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>name</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~5"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-create_watchgroup"></span>
+      <h3>public        interface <a href='../interface/create_watchgroup.html'>create_watchgroup</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine create_watchgroup_a(watch, handle, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~61"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-handle~2"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>handle</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~64"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine create_watchgroup_s(watch, handle, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~62"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-handle~3"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>handle</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~65"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-destroy_watch"></span>
+      <h3>public        interface <a href='../interface/destroy_watch.html'>destroy_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine destroy_watch_aa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~7"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~7"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~7"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine destroy_watch_as(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~8"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~8"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~8"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine destroy_watch_sa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~9"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~9"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~9"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine destroy_watch_ss(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~10"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~10"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~10"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-end_pause_watch"></span>
+      <h3>public        interface <a href='../interface/end_pause_watch.html'>end_pause_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine end_pause_watch_aa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~42"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~42"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~42"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine end_pause_watch_as(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~43"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~43"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~43"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine end_pause_watch_sa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~44"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~44"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~44"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine end_pause_watch_ss(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~45"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~45"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~45"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine end_pause_watch_ga(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~40"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~40"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~40"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine end_pause_watch_gs(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~41"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~41"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~41"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-join_watchgroup"></span>
+      <h3>public        interface <a href='../interface/join_watchgroup.html'>join_watchgroup</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine join_watchgroup_a(watch, handle, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~64"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-handle~6"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>handle</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~69"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine join_watchgroup_s(watch, handle, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~65"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-handle~7"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>handle</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~70"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-leave_watchgroup"></span>
+      <h3>public        interface <a href='../interface/leave_watchgroup.html'>leave_watchgroup</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine leave_watchgroup_a(watch, handle, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~67"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-handle~9"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>handle</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~72"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine leave_watchgroup_s(watch, handle, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~68"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-handle~10"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>handle</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~73"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-option_stopwatch"></span>
+      <h3>public        interface <a href='../interface/option_stopwatch.html'>option_stopwatch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine option_stopwatch_a(default_clock, io_unit_print, io_unit_error, print_errors, abort_errors, print_form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-default_clock"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>default_clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-io_unit_print"></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>io_unit_print</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-io_unit_error"></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>io_unit_error</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-print_errors"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>print_errors</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-abort_errors"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>abort_errors</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-print_form"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>print_form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~60"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine option_stopwatch_s(default_clock, io_unit_print, io_unit_error, print_errors, abort_errors, print_form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-default_clock~2"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>default_clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-io_unit_print~2"></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>io_unit_print</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-io_unit_error~2"></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>io_unit_error</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-print_errors~2"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>print_errors</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-abort_errors~2"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>abort_errors</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-print_form~2"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>print_form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~61"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-pause_watch"></span>
+      <h3>public        interface <a href='../interface/pause_watch.html'>pause_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine pause_watch_aa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~35"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~35"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~35"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine pause_watch_as(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~36"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~36"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~36"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine pause_watch_sa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~37"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~37"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~37"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine pause_watch_ss(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~38"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~38"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~38"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine pause_watch_ga(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~33"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~33"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~33"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine pause_watch_gs(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~34"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~34"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~34"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-print_watch"></span>
+      <h3>public        interface <a href='../interface/print_watch.html'>print_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine print_watch_aa(watch, clock, title, form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~56"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~54"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-title~4"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>title</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~5"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~56"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine print_watch_as(watch, clock, title, form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~57"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~55"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-title~5"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>title</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~6"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~57"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine print_watch_sa(watch, clock, title, form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~58"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~56"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-title~6"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>title</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~7"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~58"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine print_watch_ss(watch, clock, title, form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~59"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~57"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-title~7"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>title</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~8"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~59"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine print_watch_ga(watch, clock, title, form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~54"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~52"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-title~2"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>title</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~3"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~54"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine print_watch_gs(watch, clock, title, form, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~55"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~53"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-title~3"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>title</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~4"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~55"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-read_watch"></span>
+      <h3>public        interface <a href='../interface/read_watch.html'>read_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine read_watch_aa(read_result, watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-read_result~2"></span>
+              real,
+            </td>
+<td></td>
+              <td></td>            <td>
+              pointer, dimension(:,:)
+            </td>
+            <td>::</td>
+            <td><strong>read_result</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~47"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~47"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~47"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine read_watch_as(read_result, watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-read_result~4"></span>
+              real,
+            </td>
+<td></td>
+              <td></td>            <td>
+              pointer, dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>read_result</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~49"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~48"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~49"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine read_watch_ax(read_result, watch, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-read_result~3"></span>
+              real,
+            </td>
+<td></td>
+              <td></td>            <td>
+              pointer, dimension(:,:)
+            </td>
+            <td>::</td>
+            <td><strong>read_result</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~48"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~48"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine read_watch_sa(read_result, watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-read_result~5"></span>
+              real,
+            </td>
+<td></td>
+              <td></td>            <td>
+              pointer, dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>read_result</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~50"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~49"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~50"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine read_watch_ss(read_result, watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-read_result~7"></span>
+              real,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>read_result</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~52"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~50"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~52"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine read_watch_sx(read_result, watch, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-read_result~6"></span>
+              real,
+            </td>
+<td></td>
+              <td></td>            <td>
+              pointer, dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>read_result</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~51"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~51"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-reset_watch"></span>
+      <h3>public        interface <a href='../interface/reset_watch.html'>reset_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine reset_watch_aa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~28"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~28"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~28"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine reset_watch_as(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~29"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~29"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~29"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine reset_watch_sa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~30"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~30"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~30"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine reset_watch_ss(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~31"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~31"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~31"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine reset_watch_ga(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~26"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~26"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~26"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine reset_watch_gs(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~27"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~27"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~27"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-start_watch"></span>
+      <h3>public        interface <a href='../interface/start_watch.html'>start_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine start_watch_aa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~14"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~14"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~14"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine start_watch_as(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~15"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~15"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~15"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine start_watch_sa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~16"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~16"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~16"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine start_watch_ss(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~17"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~17"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~17"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine start_watch_ga(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~12"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~12"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~12"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine start_watch_gs(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~13"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~13"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~13"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-stop_watch"></span>
+      <h3>public        interface <a href='../interface/stop_watch.html'>stop_watch</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    private  subroutine stop_watch_aa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~21"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~21"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~21"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine stop_watch_as(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~22"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~22"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~22"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine stop_watch_sa(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~23"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~23"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~23"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine stop_watch_ss(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~24"></span>
+              type(<a href='../type/watchtype.html'>watchtype</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~24"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~24"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine stop_watch_ga(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~19"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~19"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~19"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+          <li class="list-group-item">
+                <h3>
+    private  subroutine stop_watch_gs(watch, clock, err)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-watch~20"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>watch</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-clock~20"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>clock</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~20"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+    </ul>
+  </div>
+
+        </section>
+        <br>
+
+
+        <section>
+          <h2>Derived Types</h2>
+              <div class="card">
+    <div class="card-header codesum">
+      <span class="anchor" id="type-watchgroup"></span>
+      <h3>
+        type, public&nbsp;::&nbsp;
+        <a href='../type/watchgroup.html'>watchgroup</a>
+        
+      </h3>
+    </div>
+    <div class="card-body">
+      
+
+
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum">
+      <span class="anchor" id="type-watchtype"></span>
+      <h3>
+        type, public&nbsp;::&nbsp;
+        <a href='../type/watchtype.html'>watchtype</a>
+        
+      </h3>
+    </div>
+    <div class="card-body">
+      
+
+
+
+
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+
+        <section>
+          <h2>Subroutines</h2>
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-destroy_watchgroup"></span> <h3>public  subroutine <a href='../proc/destroy_watchgroup.html'>destroy_watchgroup</a>(handle, err)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-handle~4"></span>
+              type(<a href='../type/watchgroup.html'>watchgroup</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>handle</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~66"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-inquiry_stopwatch"></span> <h3>public  subroutine <a href='../proc/inquiry_stopwatch.html'>inquiry_stopwatch</a>(default_clock, io_unit_print, io_unit_error, print_errors, abort_errors, print_form, cpu_avail, user_avail, sys_avail, wall_avail, cpu_prec, wall_prec, version, err)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-default_clock~3"></span>
+              character(len=*),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              dimension(:)
+            </td>
+            <td>::</td>
+            <td><strong>default_clock</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-io_unit_print~3"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>io_unit_print</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-io_unit_error~3"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>io_unit_error</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-print_errors~3"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>print_errors</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-abort_errors~3"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>abort_errors</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-print_form~3"></span>
+              character(len=*),
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>print_form</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cpu_avail"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cpu_avail</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-user_avail"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>user_avail</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-sys_avail"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sys_avail</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-wall_avail"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>wall_avail</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cpu_prec"></span>
+              real,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cpu_prec</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-wall_prec"></span>
+              real,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>wall_prec</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-version"></span>
+              character(len=*),
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>version</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-err~62"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>err</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-tic"></span> <h3>public  subroutine <a href='../proc/tic.html'>tic</a>()  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+    <em>None</em>
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-toc"></span> <h3>public  subroutine <a href='../proc/toc.html'>toc</a>()  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+    <em>None</em>
+
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              M_stopwatch
+ was developed by John S. Urban<br>              &copy; 2025 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2025-07-11 01:06 +0000             </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>
